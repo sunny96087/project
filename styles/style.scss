@@ -28,6 +28,8 @@ $maindarkcolor: #f6822e;
 $minorcolor: #8cad2d;
 $bgcolor: #f1ecd3;
 
+//index
+
 header {
   width: 100%;
   height: 88px;
@@ -87,15 +89,18 @@ header {
 
 main {
   background-color: $bgcolor;
+  overflow: hidden;
   section.welcome {
     display: flex;
     position: relative;
     width: 100%;
     height: 700px;
+    overflow: hidden;
+    justify-items: center;
 
     .right_pic {
       position: absolute;
-      width: 60vw;
+      width: 60%;
       //   height: 700px;
       right: 0px;
       top: 0px;
@@ -108,7 +113,7 @@ main {
 
     .linear_box {
       position: absolute;
-      width: 65vw;
+      width: 65%;
       height: 166px;
       right: 0px;
       top: 534px;
@@ -125,9 +130,9 @@ main {
 
     .left_pic {
       position: absolute;
-      width: 50vw;
+      width: 70%;
       height: 700px;
-      left: 0px;
+      left: -200px;
       top: 0px;
       z-index: 2;
     }
@@ -136,7 +141,7 @@ main {
       position: absolute;
       //   width: 106px;
       //   height: 110px;
-      left: 310px;
+      left: 110px;
       top: 36px;
       z-index: 2;
 
@@ -151,7 +156,7 @@ main {
       font-weight: 400;
       z-index: 3;
       position: absolute;
-      left: 340px;
+      left: 140px;
       top: 120px;
     }
 
@@ -160,7 +165,7 @@ main {
       position: absolute;
       width: 200px;
       height: 52px;
-      left: 340px;
+      left: 140px;
       top: 188px;
       background: $minorcolor;
       border-radius: 50px;
@@ -254,7 +259,7 @@ main {
   }
 
   section.special {
-    width: 1220px;
+    width: 1080px;
     margin: 0 auto;
     text-align: center;
     padding-bottom: 20px;
@@ -276,7 +281,7 @@ main {
       display: flex;
       width: 1000px;
       .pic {
-        width: 580px;
+        width: 560px;
       }
 
       .txt {
@@ -345,14 +350,14 @@ main {
       flex-direction: row-reverse;
       margin-left: auto;
       .pic {
-        width: 580px;
+        width: 560px;
       }
 
       .txt {
         width: 400px;
         text-align: left;
         margin-top: 120px;
-        margin-right: 40px;
+        margin-right: 20px;
         .tag {
           font-weight: 400;
           font-size: 16px;
@@ -585,3 +590,99 @@ main {
     }
   }
 }
+
+footer {
+  background: #352f23;
+
+  .footer_box {
+    display: grid;
+    grid-template-rows: 120px 58px 532px 100px 180px 20px 230px;
+    align-items: center;
+
+    margin: 0 auto;
+    width: 1240px;
+    height: 174px;
+    padding-top: 40px;
+
+    .pic_logo {
+      grid-column: 1/2;
+
+      img {
+        width: 120px;
+        height: 120px;
+      }
+    }
+
+    .about_txt {
+      grid-column: 3/4;
+      .txt_content {
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 28px;
+        color: #fff;
+
+        .lower {
+          font-weight: 500;
+          font-size: 15px;
+          line-height: 22px;
+          color: #9a9a9a;
+          margin-right: 6px;
+        }
+      }
+
+      .txt_note {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 17px;
+        color: #6a6a6a;
+      }
+    }
+
+    .footer_button {
+      grid-column: 5/6;
+      display: flex;
+      gap: 0 20px;
+
+      a {
+        display: block;
+
+        padding: 13px 23px;
+        background: $minorcolor;
+        border-radius: 6px;
+
+        text-align: center;
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 32px;
+        color: #fff;
+      }
+    }
+
+    .icon_phone {
+      grid-column: 7/8;
+      display: flex;
+      flex-direction: column;
+      justify-content: end;
+
+      .icon {
+        margin-bottom: 40px;
+        a {
+          color: #9a9791;
+          margin-right: 12px;
+
+          i {
+            font-size: 26px;
+          }
+        }
+      }
+      .phone {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 26px;
+        color: #fff;
+      }
+    }
+  }
+}
+
+//about
