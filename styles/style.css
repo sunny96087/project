@@ -76,16 +76,19 @@ header nav .nav_list a {
 
 main {
   background-color: #f1ecd3;
+  overflow: hidden;
 }
 main section.welcome {
   display: flex;
   position: relative;
   width: 100%;
   height: 700px;
+  overflow: hidden;
+  justify-items: center;
 }
 main section.welcome .right_pic {
   position: absolute;
-  width: 60vw;
+  width: 60%;
   right: 0px;
   top: 0px;
   z-index: 1;
@@ -96,7 +99,7 @@ main section.welcome .right_pic img {
 }
 main section.welcome .linear_box {
   position: absolute;
-  width: 65vw;
+  width: 65%;
   height: 166px;
   right: 0px;
   top: 534px;
@@ -105,15 +108,15 @@ main section.welcome .linear_box {
 }
 main section.welcome .left_pic {
   position: absolute;
-  width: 50vw;
+  width: 70%;
   height: 700px;
-  left: 0px;
+  left: -200px;
   top: 0px;
   z-index: 2;
 }
 main section.welcome .sun_pic {
   position: absolute;
-  left: 310px;
+  left: 110px;
   top: 36px;
   z-index: 2;
 }
@@ -126,7 +129,7 @@ main section.welcome p {
   font-weight: 400;
   z-index: 3;
   position: absolute;
-  left: 340px;
+  left: 140px;
   top: 120px;
 }
 main section.welcome a {
@@ -134,7 +137,7 @@ main section.welcome a {
   position: absolute;
   width: 200px;
   height: 52px;
-  left: 340px;
+  left: 140px;
   top: 188px;
   background: #8cad2d;
   border-radius: 50px;
@@ -212,7 +215,7 @@ main section.about div a.circle_button .circle_button_2 .circle_button_3 span {
   transform: translate(-50%, -50%);
 }
 main section.special {
-  width: 1220px;
+  width: 1080px;
   margin: 0 auto;
   text-align: center;
   padding-bottom: 20px;
@@ -233,7 +236,7 @@ main section.special .meal {
   width: 1000px;
 }
 main section.special .meal .pic {
-  width: 580px;
+  width: 560px;
 }
 main section.special .meal .txt {
   width: 400px;
@@ -295,13 +298,13 @@ main section.special .meal_pasta {
   margin-left: auto;
 }
 main section.special .meal_pasta .pic {
-  width: 580px;
+  width: 560px;
 }
 main section.special .meal_pasta .txt {
   width: 400px;
   text-align: left;
   margin-top: 120px;
-  margin-right: 40px;
+  margin-right: 20px;
 }
 main section.special .meal_pasta .txt .tag {
   font-weight: 400;
@@ -495,5 +498,85 @@ main section.news .content .turnright i {
   left: 16px;
   top: 50%;
   margin-top: -9px;
+  color: #fff;
+}
+
+footer {
+  background: #352f23;
+}
+footer .footer_box {
+  display: grid;
+  grid-template-rows: 120px 58px 532px 100px 180px 20px 230px;
+  align-items: center;
+  margin: 0 auto;
+  width: 1240px;
+  height: 174px;
+  padding-top: 40px;
+}
+footer .footer_box .pic_logo {
+  grid-column: 1/2;
+}
+footer .footer_box .pic_logo img {
+  width: 120px;
+  height: 120px;
+}
+footer .footer_box .about_txt {
+  grid-column: 3/4;
+}
+footer .footer_box .about_txt .txt_content {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 28px;
+  color: #fff;
+}
+footer .footer_box .about_txt .txt_content .lower {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+  color: #9a9a9a;
+  margin-right: 6px;
+}
+footer .footer_box .about_txt .txt_note {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 17px;
+  color: #6a6a6a;
+}
+footer .footer_box .footer_button {
+  grid-column: 5/6;
+  display: flex;
+  gap: 0 20px;
+}
+footer .footer_box .footer_button a {
+  display: block;
+  padding: 13px 23px;
+  background: #8cad2d;
+  border-radius: 6px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 32px;
+  color: #fff;
+}
+footer .footer_box .icon_phone {
+  grid-column: 7/8;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+footer .footer_box .icon_phone .icon {
+  margin-bottom: 40px;
+}
+footer .footer_box .icon_phone .icon a {
+  color: #9a9791;
+  margin-right: 12px;
+}
+footer .footer_box .icon_phone .icon a i {
+  font-size: 26px;
+}
+footer .footer_box .icon_phone .phone {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
   color: #fff;
 }/*# sourceMappingURL=style.css.map */
