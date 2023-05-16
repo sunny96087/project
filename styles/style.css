@@ -721,7 +721,7 @@ body main.meal .page_tag i {
 body main.meal .page_tag .tag_now {
   font-weight: 400;
   font-size: 14px;
-  color: #757575;
+  color: #000;
 }
 body main.meal .meal_block {
   width: 1280px;
@@ -901,4 +901,124 @@ body main.meal .meal_block .content .menu_pic a.circle_button .circle_button_2 .
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+}
+
+body {
+  background-color: #f1ecd3;
+}
+body main.meal_page {
+  position: relative;
+  width: 1280px;
+  margin: 0 auto;
+  padding-bottom: 40px;
+}
+body main.meal_page .page_tag {
+  width: 1220px;
+  margin: 0 auto;
+  padding-top: 46px;
+  display: flex;
+  align-items: center;
+  gap: 0 8px;
+}
+body main.meal_page .page_tag .icon {
+  width: 24px;
+  height: 24px;
+  background: #f6822e;
+  border-radius: 50%;
+  text-align: center;
+}
+body main.meal_page .page_tag .icon i {
+  color: #fff;
+  line-height: 24px;
+  font-size: 10px;
+}
+body main.meal_page .page_tag .tag_txt {
+  font-weight: 400;
+  font-size: 14px;
+  color: #f6822e;
+}
+body main.meal_page .page_tag i {
+  font-size: 10px;
+}
+body main.meal_page .page_tag .tag_now {
+  font-weight: 400;
+  font-size: 14px;
+  color: #000;
+}
+body main.meal_page h1 {
+  font-weight: 700;
+  font-size: 62px;
+  line-height: 90px;
+  color: #000;
+  margin-left: 20px;
+  margin-top: 56px;
+}
+body main.meal_page h2 {
+  font-weight: 900;
+  font-size: 27px;
+  line-height: 39px;
+  margin-left: 20px;
+  color: #363636;
+  margin-bottom: 256px;
+}
+body main.meal_page .food_pic {
+  position: absolute;
+  width: 383px;
+  height: 377px;
+  left: 849px;
+  top: 47px;
+}
+body main.meal_page h3 {
+  text-align: center;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 72px;
+  color: #000;
+}
+body main.meal_page h4 {
+  text-align: center;
+  font-weight: 900;
+  font-size: 23px;
+  line-height: 200%;
+  color: #8cad2d;
+}
+body main.meal_page .line1 {
+  margin-top: 64px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+body main.meal_page p {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 32px;
+  color: #000;
+  padding-left: 30px;
+}
+body main.meal_page .line2 {
+  margin-top: 40px;
+  text-align: center;
+}
+body main.meal_page .share {
+  margin-top: 16px;
+  margin-left: 30px;
+  display: flex;
+  align-items: center;
+  gap: 0 12px;
+}
+body main.meal_page .line3 {
+  text-align: center;
+  margin-bottom: 32px;
+}
+body main.meal_page a.back_button {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  width: 202px;
+  height: 52px;
+  line-height: 52px;
+  background-color: #f0a739;
+  border-radius: 50px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 18px;
 }/*# sourceMappingURL=style.css.map */
