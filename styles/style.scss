@@ -87,7 +87,7 @@ header {
   }
 }
 
-main {
+main.index {
   background-color: $bgcolor;
   overflow: hidden;
   section.welcome {
@@ -686,3 +686,115 @@ footer {
 }
 
 //about
+
+main.about {
+  background-color: $bgcolor;
+
+  .title {
+    text-align: center;
+    width: 1220px;
+    margin: 0 auto;
+    h1 {
+      font-weight: 700;
+      font-size: 50px;
+      padding-top: 40px;
+    }
+
+    h2 {
+      font-weight: 700;
+      font-size: 23px;
+      color: $minorcolor;
+      margin-top: 12px;
+      margin-bottom: 56px;
+    }
+
+    .nb_1 {
+      width: 168px;
+      height: 40px;
+      background: $minorcolor;
+      border-radius: 50px;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 40px;
+      color: #fff;
+      margin: 0 auto;
+    }
+    span {
+      display: block;
+      margin-top: 36px;
+      text-align: left;
+      font-weight: 400;
+      font-size: 22px;
+    }
+    .line {
+      width: 1220px;
+      padding-bottom: 24px;
+    }
+  }
+
+  .content {
+    width: 1220px;
+    margin: 0 auto;
+    display: flex;
+    padding-bottom: 40px;
+
+    .pic2 {
+      width: 600px;
+      margin-right: 20px;
+      .pic2_pic1 {
+        width: 600px;
+        height: 334px;
+        margin-bottom: 24px;
+        img {
+          vertical-align: top;
+          border-radius: 2px;
+        }
+      }
+      .pic2_pic2 {
+        width: 600px;
+        height: 592px;
+        img {
+          vertical-align: top;
+          border-radius: 2px;
+        }
+      }
+    }
+
+    .pic_txt {
+      width: 600px;
+      .txt {
+        h3 {
+          font-weight: 700;
+          font-size: 26px;
+          line-height: 38px;
+          margin-top: 24px;
+          color: #232323;
+          // margin-bottom: 16px;
+        }
+        span {
+          font-weight: 400;
+          font-size: 20px;
+          line-height: 29px;
+          color: #232323;
+          display: block;
+          margin: 16px 0;
+        }
+        p {
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 160%;
+          color: #232323;
+          padding-bottom: 24px;
+        }
+      }
+      .pic_txt_pic {
+        img {
+          vertical-align: top;
+          border-radius: 2px;
+          width: 600px;
+          height: 396px;
+        }
+      }
+    }
+  }
+}

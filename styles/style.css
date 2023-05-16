@@ -74,11 +74,11 @@ header nav .nav_list a {
   color: #000;
 }
 
-main {
+main.index {
   background-color: #f1ecd3;
   overflow: hidden;
 }
-main section.welcome {
+main.index section.welcome {
   display: flex;
   position: relative;
   width: 100%;
@@ -86,18 +86,18 @@ main section.welcome {
   overflow: hidden;
   justify-items: center;
 }
-main section.welcome .right_pic {
+main.index section.welcome .right_pic {
   position: absolute;
   width: 60%;
   right: 0px;
   top: 0px;
   z-index: 1;
 }
-main section.welcome .right_pic img {
+main.index section.welcome .right_pic img {
   width: 1200px;
   height: 700px;
 }
-main section.welcome .linear_box {
+main.index section.welcome .linear_box {
   position: absolute;
   width: 65%;
   height: 166px;
@@ -106,7 +106,7 @@ main section.welcome .linear_box {
   z-index: 5;
   background: linear-gradient(180deg, rgba(241, 236, 211, 0) 0%, rgba(241, 236, 211, 0.578125) 38.02%, rgba(241, 236, 211, 0.743773) 59.9%, rgba(241, 236, 211, 0.878906) 79.69%, #f1ecd3 100%);
 }
-main section.welcome .left_pic {
+main.index section.welcome .left_pic {
   position: absolute;
   width: 70%;
   height: 700px;
@@ -114,17 +114,17 @@ main section.welcome .left_pic {
   top: 0px;
   z-index: 2;
 }
-main section.welcome .sun_pic {
+main.index section.welcome .sun_pic {
   position: absolute;
   left: 110px;
   top: 36px;
   z-index: 2;
 }
-main section.welcome .sun_pic img {
+main.index section.welcome .sun_pic img {
   width: 106px;
   height: 110px;
 }
-main section.welcome p {
+main.index section.welcome p {
   font-size: 22px;
   font-weight: 400;
   z-index: 3;
@@ -132,7 +132,7 @@ main section.welcome p {
   left: 140px;
   top: 120px;
 }
-main section.welcome a {
+main.index section.welcome a {
   z-index: 3;
   position: absolute;
   width: 200px;
@@ -147,35 +147,35 @@ main section.welcome a {
   font-weight: 700;
   font-size: 20px;
 }
-main section.about {
+main.index section.about {
   width: 1280px;
   margin: 0 auto;
   text-align: center;
   padding: 100px 0;
 }
-main section.about h1 {
+main.index section.about h1 {
   font-weight: 700;
   font-size: 50px;
 }
-main section.about h2 {
+main.index section.about h2 {
   font-weight: 700;
   font-size: 23px;
   color: #8cad2d;
   margin-top: 12px;
   margin-bottom: 56px;
 }
-main section.about span {
+main.index section.about span {
   font-weight: 500;
   font-size: 20px;
 }
-main section.about p {
+main.index section.about p {
   font-weight: 400;
   font-size: 17px;
   line-height: 25px;
   margin-top: 20px;
   margin-bottom: 70px;
 }
-main section.about div {
+main.index section.about div {
   width: 1220px;
   height: 410px;
   filter: drop-shadow(0px 3px 30px rgba(55, 55, 55, 0.16));
@@ -184,7 +184,7 @@ main section.about div {
   position: relative;
   margin: 0 auto;
 }
-main section.about div a.circle_button .circle_button_2 {
+main.index section.about div a.circle_button .circle_button_2 {
   width: 224px;
   height: 224px;
   position: absolute;
@@ -194,7 +194,7 @@ main section.about div a.circle_button .circle_button_2 {
   border: 2px dashed #fff;
   border-radius: 50%;
 }
-main section.about div a.circle_button .circle_button_2 .circle_button_3 {
+main.index section.about div a.circle_button .circle_button_2 .circle_button_3 {
   position: absolute;
   left: 50%;
   top: 50%;
@@ -204,7 +204,7 @@ main section.about div a.circle_button .circle_button_2 .circle_button_3 {
   border: 2px solid #fff;
   border-radius: 50%;
 }
-main section.about div a.circle_button .circle_button_2 .circle_button_3 span {
+main.index section.about div a.circle_button .circle_button_2 .circle_button_3 span {
   color: #fff;
   font-weight: 500;
   font-size: 26px;
@@ -214,37 +214,37 @@ main section.about div a.circle_button .circle_button_2 .circle_button_3 span {
   top: 50%;
   transform: translate(-50%, -50%);
 }
-main section.special {
+main.index section.special {
   width: 1080px;
   margin: 0 auto;
   text-align: center;
   padding-bottom: 20px;
 }
-main section.special h1 {
+main.index section.special h1 {
   font-weight: 700;
   font-size: 50px;
 }
-main section.special h2 {
+main.index section.special h2 {
   font-weight: 700;
   font-size: 23px;
   color: #8cad2d;
   margin-top: 12px;
   margin-bottom: 56px;
 }
-main section.special .meal {
+main.index section.special .meal {
   display: flex;
   width: 1000px;
 }
-main section.special .meal .pic {
+main.index section.special .meal .pic {
   width: 560px;
 }
-main section.special .meal .txt {
+main.index section.special .meal .txt {
   width: 400px;
   text-align: left;
   margin-top: 120px;
   margin-left: 40px;
 }
-main section.special .meal .txt .tag {
+main.index section.special .meal .txt .tag {
   font-weight: 400;
   font-size: 16px;
   color: #fff;
@@ -256,29 +256,29 @@ main section.special .meal .txt .tag {
   line-height: 32px;
   margin-bottom: 8px;
 }
-main section.special .meal .txt h3 {
+main.index section.special .meal .txt h3 {
   font-weight: 700;
   font-size: 36px;
   line-height: 52px;
 }
-main section.special .meal .txt span {
+main.index section.special .meal .txt span {
   font-weight: 700;
   font-size: 20px;
   line-height: 140%;
   color: #8cad2d;
 }
-main section.special .meal .txt .star {
+main.index section.special .meal .txt .star {
   font-size: 4px;
   margin-top: 8px;
   margin-bottom: 12px;
   color: #ffbc0d;
 }
-main section.special .meal .txt p {
+main.index section.special .meal .txt p {
   font-weight: 500;
   font-size: 17px;
   line-height: 155%;
 }
-main section.special .meal .txt a {
+main.index section.special .meal .txt a {
   display: block;
   width: 200px;
   height: 52px;
@@ -291,22 +291,22 @@ main section.special .meal .txt a {
   color: #fff;
   margin-top: 24px;
 }
-main section.special .meal_pasta {
+main.index section.special .meal_pasta {
   display: flex;
   width: 1000px;
   flex-direction: row-reverse;
   margin-left: auto;
 }
-main section.special .meal_pasta .pic {
+main.index section.special .meal_pasta .pic {
   width: 560px;
 }
-main section.special .meal_pasta .txt {
+main.index section.special .meal_pasta .txt {
   width: 400px;
   text-align: left;
   margin-top: 120px;
   margin-right: 20px;
 }
-main section.special .meal_pasta .txt .tag {
+main.index section.special .meal_pasta .txt .tag {
   font-weight: 400;
   font-size: 16px;
   color: #fff;
@@ -318,29 +318,29 @@ main section.special .meal_pasta .txt .tag {
   line-height: 32px;
   margin-bottom: 8px;
 }
-main section.special .meal_pasta .txt h3 {
+main.index section.special .meal_pasta .txt h3 {
   font-weight: 700;
   font-size: 36px;
   line-height: 52px;
 }
-main section.special .meal_pasta .txt span {
+main.index section.special .meal_pasta .txt span {
   font-weight: 700;
   font-size: 20px;
   line-height: 140%;
   color: #8cad2d;
 }
-main section.special .meal_pasta .txt .star {
+main.index section.special .meal_pasta .txt .star {
   font-size: 4px;
   margin-top: 8px;
   margin-bottom: 12px;
   color: #ffbc0d;
 }
-main section.special .meal_pasta .txt p {
+main.index section.special .meal_pasta .txt p {
   font-weight: 500;
   font-size: 17px;
   line-height: 155%;
 }
-main section.special .meal_pasta .txt a {
+main.index section.special .meal_pasta .txt a {
   display: block;
   width: 200px;
   height: 52px;
@@ -353,13 +353,13 @@ main section.special .meal_pasta .txt a {
   color: #fff;
   margin-top: 24px;
 }
-main section.special a.circle_button {
+main.index section.special a.circle_button {
   display: block;
   margin: 0 auto;
   width: 224px;
   height: 224px;
 }
-main section.special a.circle_button .circle_button_2 {
+main.index section.special a.circle_button .circle_button_2 {
   width: 224px;
   height: 224px;
   position: relative;
@@ -368,7 +368,7 @@ main section.special a.circle_button .circle_button_2 {
   border: 2px dashed #f6822e;
   border-radius: 50%;
 }
-main section.special a.circle_button .circle_button_2 .circle_button_3 {
+main.index section.special a.circle_button .circle_button_2 .circle_button_3 {
   position: absolute;
   left: 50%;
   top: 50%;
@@ -379,7 +379,7 @@ main section.special a.circle_button .circle_button_2 .circle_button_3 {
   border-radius: 50%;
   background-color: #f6822e;
 }
-main section.special a.circle_button .circle_button_2 .circle_button_3 span {
+main.index section.special a.circle_button .circle_button_2 .circle_button_3 span {
   color: #fff;
   font-weight: 500;
   font-size: 26px;
@@ -389,26 +389,26 @@ main section.special a.circle_button .circle_button_2 .circle_button_3 span {
   top: 50%;
   transform: translate(-50%, -50%);
 }
-main section.news {
+main.index section.news {
   text-align: center;
   padding-top: 112px;
   padding-bottom: 40px;
 }
-main section.news h1 {
+main.index section.news h1 {
   font-weight: 700;
   font-size: 50px;
 }
-main section.news h2 {
+main.index section.news h2 {
   font-weight: 700;
   font-size: 23px;
   color: #8cad2d;
   margin-top: 12px;
   margin-bottom: 56px;
 }
-main section.news .content {
+main.index section.news .content {
   position: relative;
 }
-main section.news .content .news_list {
+main.index section.news .content .news_list {
   display: flex;
   width: 95%;
   gap: 0 38px;
@@ -416,13 +416,13 @@ main section.news .content .news_list {
   margin: 0 auto;
   padding-bottom: 40px;
 }
-main section.news .content .news_list a {
+main.index section.news .content .news_list a {
   width: 100%;
 }
-main section.news .content .news_list a .list_card .pic img {
+main.index section.news .content .news_list a .list_card .pic img {
   width: 100%;
 }
-main section.news .content .news_list a .list_card h3 {
+main.index section.news .content .news_list a .list_card h3 {
   font-weight: 400;
   font-size: 19px;
   line-height: 140%;
@@ -432,37 +432,37 @@ main section.news .content .news_list a .list_card h3 {
   margin-bottom: 4px;
   padding: 0 6px;
 }
-main section.news .content .news_list a .list_card span {
+main.index section.news .content .news_list a .list_card span {
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
   color: #757575;
 }
-main section.news .content .news_list a:nth-child(2) {
+main.index section.news .content .news_list a:nth-child(2) {
   transform: translateY(40px);
 }
-main section.news .content .news_list a:nth-child(4) {
+main.index section.news .content .news_list a:nth-child(4) {
   transform: translateY(40px);
 }
-main section.news .content .page_dot {
+main.index section.news .content .page_dot {
   display: flex;
   justify-content: center;
   gap: 0 8px;
   margin-top: 12px;
   align-items: center;
 }
-main section.news .content .page_dot a {
+main.index section.news .content .page_dot a {
   width: 8px;
   height: 8px;
   background: #757575;
   border-radius: 50%;
 }
-main section.news .content .page_dot .focus {
+main.index section.news .content .page_dot .focus {
   width: 12px;
   height: 12px;
   background: #ffbc0d;
 }
-main section.news .content .turnleft {
+main.index section.news .content .turnleft {
   position: absolute;
   width: 85px;
   height: 52px;
@@ -473,7 +473,7 @@ main section.news .content .turnleft {
   border-radius: 0px 24px 24px 0px;
   line-height: 52px;
 }
-main section.news .content .turnleft i {
+main.index section.news .content .turnleft i {
   font-size: 16px;
   position: absolute;
   right: 16px;
@@ -481,7 +481,7 @@ main section.news .content .turnleft i {
   margin-top: -9px;
   color: #fff;
 }
-main section.news .content .turnright {
+main.index section.news .content .turnright {
   position: absolute;
   width: 85px;
   height: 52px;
@@ -492,7 +492,7 @@ main section.news .content .turnright {
   border-radius: 24px 0px 0px 24px;
   line-height: 52px;
 }
-main section.news .content .turnright i {
+main.index section.news .content .turnright i {
   font-size: 16px;
   position: absolute;
   left: 16px;
@@ -579,4 +579,105 @@ footer .footer_box .icon_phone .phone {
   font-size: 18px;
   line-height: 26px;
   color: #fff;
+}
+
+main.about {
+  background-color: #f1ecd3;
+}
+main.about .title {
+  text-align: center;
+  width: 1220px;
+  margin: 0 auto;
+}
+main.about .title h1 {
+  font-weight: 700;
+  font-size: 50px;
+  padding-top: 40px;
+}
+main.about .title h2 {
+  font-weight: 700;
+  font-size: 23px;
+  color: #8cad2d;
+  margin-top: 12px;
+  margin-bottom: 56px;
+}
+main.about .title .nb_1 {
+  width: 168px;
+  height: 40px;
+  background: #8cad2d;
+  border-radius: 50px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 40px;
+  color: #fff;
+  margin: 0 auto;
+}
+main.about .title span {
+  display: block;
+  margin-top: 36px;
+  text-align: left;
+  font-weight: 400;
+  font-size: 22px;
+}
+main.about .title .line {
+  width: 1220px;
+  padding-bottom: 24px;
+}
+main.about .content {
+  width: 1220px;
+  margin: 0 auto;
+  display: flex;
+  padding-bottom: 40px;
+}
+main.about .content .pic2 {
+  width: 600px;
+  margin-right: 20px;
+}
+main.about .content .pic2 .pic2_pic1 {
+  width: 600px;
+  height: 334px;
+  margin-bottom: 24px;
+}
+main.about .content .pic2 .pic2_pic1 img {
+  vertical-align: top;
+  border-radius: 2px;
+}
+main.about .content .pic2 .pic2_pic2 {
+  width: 600px;
+  height: 592px;
+}
+main.about .content .pic2 .pic2_pic2 img {
+  vertical-align: top;
+  border-radius: 2px;
+}
+main.about .content .pic_txt {
+  width: 600px;
+}
+main.about .content .pic_txt .txt h3 {
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 38px;
+  margin-top: 24px;
+  color: #232323;
+}
+main.about .content .pic_txt .txt span {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 29px;
+  color: #232323;
+  display: block;
+  margin: 16px 0;
+}
+main.about .content .pic_txt .txt p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  color: #232323;
+  padding-bottom: 24px;
+}
+main.about .content .pic_txt .pic_txt_pic img {
+  vertical-align: top;
+  border-radius: 2px;
+  width: 600px;
+  height: 396px;
 }/*# sourceMappingURL=style.css.map */
