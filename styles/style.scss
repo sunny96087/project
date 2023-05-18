@@ -1508,6 +1508,242 @@ main.news {
   }
 }
 
+//news_page
+
+main.news_page {
+  max-width: 1220px;
+  margin: 0 auto;
+  h1 {
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 72px;
+    color: #272727;
+    margin-top: 80px;
+    text-align: center;
+  }
+
+  h2 {
+    font-weight: 900;
+    font-size: 23px;
+    // line-height: 200%;
+    color: $minorcolor;
+    text-align: center;
+    margin-bottom: 56px;
+  }
+
+  .goob_button {
+    width: 60px;
+    height: 24px;
+    background: #618af2;
+    border-radius: 4px;
+    border: none;
+    line-height: 24px;
+    margin-bottom: 16px;
+    img {
+      vertical-align: text-top;
+    }
+  }
+
+  .date {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #757575;
+  }
+
+  h3 {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 32px;
+    color: #000;
+  }
+
+  .line {
+    margin-bottom: 32px;
+  }
+
+  .news_pic {
+    vertical-align: top;
+    img {
+      border-radius: 2px;
+    }
+  }
+
+  h4 {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 52px;
+    text-align: center;
+    color: #232323;
+    margin-top: 48px;
+    margin-bottom: 8px;
+  }
+
+  .note {
+    margin-left: 20px;
+
+    li {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 180%;
+      color: #232323;
+    }
+  }
+
+  .join_title {
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 38px;
+    text-align: center;
+    color: #232323;
+    margin-top: 40px;
+    margin-bottom: 8px;
+  }
+
+  .join_content {
+    margin-left: 20px;
+
+    li {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 180%;
+      color: #232323;
+    }
+  }
+
+  .pursue_title {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 43px;
+    text-align: center;
+    letter-spacing: 0.14em;
+    color: #232323;
+    margin-top: 80px;
+    margin-bottom: 40px;
+  }
+
+  ol {
+    margin-left: 20px;
+
+    li {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 180%;
+      color: #232323;
+    }
+  }
+
+  .manager {
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 100%;
+    text-align: center;
+    color: #232323;
+    margin-top: 100px;
+    // margin-bottom: 80px;
+  }
+
+  .manager_card {
+    margin-top: 80px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0 32px;
+    .manager_card_pic {
+      img {
+        vertical-align: top;
+        border-radius: 4px;
+      }
+    }
+
+    .manager_card_txt {
+      h5 {
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 38px;
+        letter-spacing: 0.24em;
+        color: #000;
+      }
+
+      p {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        color: #000;
+        margin-top: 28px;
+        margin-bottom: 32px;
+      }
+
+      a {
+        width: 204px;
+        height: 52px;
+        display: block;
+        background-color: $maindarkcolor;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 52px;
+        text-align: center;
+        border-radius: 4px;
+        color: #000;
+      }
+    }
+  }
+
+  .card_line {
+    margin-top: 32px;
+  }
+
+  .share {
+    margin-top: 16px;
+    // margin-left: 30px;
+    display: flex;
+    align-items: center;
+    gap: 0 12px;
+    margin-bottom: 40px;
+  }
+
+  h6 {
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 72px;
+    text-align: center;
+    color: #272727;
+  }
+
+  .other_txt {
+    display: block;
+    font-weight: 900;
+    font-size: 23px;
+    line-height: 200%;
+    text-align: center;
+    color: #8cad2d;
+    margin-bottom: 40px;
+  }
+
+  .news_page_card {
+    display: grid;
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    text-align: center;
+    padding-bottom: 40px;
+    .card_item {
+      h3 {
+        font-weight: 500;
+        font-size: 20px;
+        color: #191919;
+        margin-top: 20px;
+        margin-bottom: 4px;
+      }
+
+      span {
+        font-weight: 400;
+        font-size: 14px;
+        color: #757575;
+      }
+    }
+  }
+}
+
 //assurance
 
 main.assurance {
