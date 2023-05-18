@@ -1272,4 +1272,53 @@ main.news .news_card .card_item span {
   font-weight: 400;
   font-size: 14px;
   color: #757575;
+}
+
+main.assurance {
+  text-align: center;
+}
+main.assurance h1 {
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 72px;
+  color: #272727;
+  margin-top: 80px;
+}
+main.assurance h2 {
+  font-weight: 900;
+  font-size: 23px;
+  color: #8cad2d;
+}
+main.assurance .news_button {
+  margin-top: 80px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+main.assurance .news_button a {
+  border: 1px solid #8cad2d;
+  border-radius: 50px;
+  padding: 7px 38px;
+  color: #8cad2d;
+  margin: 0 11px;
+}
+main.assurance .news_button a#focus {
+  background-color: #8cad2d;
+  color: #fff;
+}
+main.assurance .assurance_card {
+  width: 1220px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  text-align: center;
+  padding-bottom: 40px;
+}
+main.assurance .assurance_card .card_item h3 {
+  font-weight: 500;
+  font-size: 20px;
+  color: #191919;
+  margin-top: 20px;
+  margin-bottom: 4px;
 }/*# sourceMappingURL=style.css.map */
