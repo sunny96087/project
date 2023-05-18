@@ -1078,6 +1078,9 @@ main.store .store_title .title_right img {
   height: 560px;
   vertical-align: top;
 }
+main.store .store_table {
+  padding-bottom: 40px;
+}
 main.store .store_table .search_list {
   justify-content: center;
   align-items: center;
@@ -1089,6 +1092,8 @@ main.store .store_table .search_list {
 main.store .store_table .search_list select {
   width: 240px;
   height: 40px;
+  font-weight: 700;
+  font-size: 14px;
   border: 1px solid #8cad2d;
   border-radius: 50px;
   padding: 0 20px;
@@ -1134,13 +1139,16 @@ main.store .store_table .search_list .search_button {
 main.store .store_table .store_table_content {
   margin: 0 auto;
   text-align: left;
-  padding-bottom: 40px;
+  padding-bottom: 24px;
+  width: 1220px;
+}
+main.store .store_table .store_table_content thead {
+  background-color: #8cad2d;
 }
 main.store .store_table .store_table_content thead tr th {
   font-weight: 600;
   font-size: 18px;
   color: #fff;
-  background-color: #8cad2d;
   padding: 20px 0;
   padding-left: 12px;
 }
@@ -1170,14 +1178,19 @@ main.store .store_table .store_table_content tbody tr td i {
   color: #000;
 }
 main.store .store_table .page_button {
-  display: flex;
-  align-items: center;
+  text-align: center;
+  font-weight: 500;
+  font-size: 17px;
 }
 main.store .store_table .page_button a {
   text-align: center;
   font-weight: 500;
   font-size: 17px;
   color: #000;
+}
+main.store .store_table .page_button a#focus_a {
+  color: #f0a739;
+  margin-right: 4px;
 }
 
 main.news .store_title {
@@ -1321,4 +1334,70 @@ main.assurance .assurance_card .card_item h3 {
   color: #191919;
   margin-top: 20px;
   margin-bottom: 4px;
+}
+
+main.assurance_page {
+  text-align: center;
+  padding-bottom: 40px;
+}
+main.assurance_page h1 {
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 72px;
+  color: #272727;
+  margin-top: 80px;
+}
+main.assurance_page h2 {
+  font-weight: 900;
+  font-size: 23px;
+  color: #8cad2d;
+  margin-bottom: 64px;
+}
+main.assurance_page .assurance_page_content {
+  width: 1220px;
+  margin: 0 auto;
+  display: grid;
+  grid-template: 1fr/1fr 1fr;
+  margin-bottom: 20px;
+}
+main.assurance_page .assurance_page_content .left_picblock .bigpic img {
+  border-radius: 2px;
+}
+main.assurance_page .assurance_page_content .left_picblock .smallpic_list {
+  display: flex;
+  gap: 0 8px;
+  margin-top: 2px;
+}
+main.assurance_page .assurance_page_content .left_picblock .smallpic_list img {
+  border-radius: 2px;
+}
+main.assurance_page .assurance_page_content .right_txtblock h3 {
+  text-align: left;
+  margin-left: 30px;
+  font-weight: 400;
+  font-size: 22px;
+  margin-bottom: 8px;
+}
+main.assurance_page .assurance_page_content .right_txtblock .share {
+  margin-top: 16px;
+  margin-left: 30px;
+  display: flex;
+  align-items: center;
+  gap: 0 12px;
+}
+main.assurance_page .long_line {
+  margin-top: 12px;
+}
+main.assurance_page .back_button {
+  background: #f0a739;
+  border-radius: 50px;
+  width: 202px;
+  height: 52px;
+  line-height: 52px;
+  margin: 0 auto;
+  margin-top: 36px;
+  display: block;
+  font-weight: 700;
+  font-size: 18px;
+  color: #fff;
 }/*# sourceMappingURL=style.css.map */
