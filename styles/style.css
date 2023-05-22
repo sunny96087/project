@@ -72,6 +72,13 @@ header nav .nav_list a {
   font-weight: 400;
   text-align: center;
   color: #000;
+  transition: all 0.3s ease;
+  padding: 8px 0;
+}
+header nav .nav_list a:hover {
+  color: #8cad2d;
+  border-bottom: 2px solid #8cad2d;
+  border-top: 2px solid #8cad2d;
 }
 
 main.index {
@@ -146,6 +153,16 @@ main.index section.welcome a {
   color: #fff;
   font-weight: 700;
   font-size: 20px;
+  box-shadow: 2px 3px 0.5px 0px #094021;
+  transition: all 0.3s ease;
+}
+main.index section.welcome a:hover {
+  background-color: #f6822e;
+}
+main.index section.welcome a:active {
+  color: #000;
+  transform: translate(2px, 3px);
+  box-shadow: none;
 }
 main.index section.about {
   width: 1280px;
@@ -184,6 +201,13 @@ main.index section.about div {
   position: relative;
   margin: 0 auto;
 }
+main.index section.about div a.circle_button {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 1s ease;
+}
 main.index section.about div a.circle_button .circle_button_2 {
   width: 224px;
   height: 224px;
@@ -191,6 +215,7 @@ main.index section.about div a.circle_button .circle_button_2 {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+  transition: all 0.5s ease;
   border: 2px dashed #fff;
   border-radius: 50%;
 }
@@ -201,6 +226,7 @@ main.index section.about div a.circle_button .circle_button_2 .circle_button_3 {
   transform: translate(-50%, -50%);
   width: 204px;
   height: 204px;
+  transition: all 0.5s ease;
   border: 2px solid #fff;
   border-radius: 50%;
 }
@@ -213,6 +239,18 @@ main.index section.about div a.circle_button .circle_button_2 .circle_button_3 s
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+  transition: all 1s ease;
+}
+main.index section.about div .circle_button:hover .circle_button_2 {
+  padding: 16px;
+  border: 2px dashed #fff;
+}
+main.index section.about div .circle_button:hover .circle_button_3 {
+  border: 2px solid #f6822e;
+  padding: 8px;
+}
+main.index section.about div .circle_button:hover #cir_txt {
+  color: #fff;
 }
 main.index section.special {
   width: 1080px;
@@ -290,6 +328,16 @@ main.index section.special .meal .txt a {
   text-align: center;
   color: #fff;
   margin-top: 24px;
+  box-shadow: 2px 3px 0.5px 0px #094021;
+  transition: all 0.3s ease;
+}
+main.index section.special .meal .txt a:hover {
+  background-color: #f6822e;
+}
+main.index section.special .meal .txt a:active {
+  color: #000;
+  transform: translate(2px, 3px);
+  box-shadow: none;
 }
 main.index section.special .meal_pasta {
   display: flex;
@@ -352,6 +400,16 @@ main.index section.special .meal_pasta .txt a {
   text-align: center;
   color: #fff;
   margin-top: 24px;
+  box-shadow: 2px 3px 0.5px 0px #094021;
+  transition: all 0.3s ease;
+}
+main.index section.special .meal_pasta .txt a:hover {
+  background-color: #f6822e;
+}
+main.index section.special .meal_pasta .txt a:active {
+  color: #000;
+  transform: translate(2px, 3px);
+  box-shadow: none;
 }
 main.index section.special a.circle_button {
   display: block;
@@ -367,6 +425,7 @@ main.index section.special a.circle_button .circle_button_2 {
   margin-top: 24px;
   border: 2px dashed #f6822e;
   border-radius: 50%;
+  transition: all 0.5s ease;
 }
 main.index section.special a.circle_button .circle_button_2 .circle_button_3 {
   position: absolute;
@@ -388,6 +447,9 @@ main.index section.special a.circle_button .circle_button_2 .circle_button_3 spa
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+}
+main.index section.special .circle_button:hover .circle_button_2 {
+  transform: scale(1.1, 1.1);
 }
 main.index section.news {
   text-align: center;
@@ -472,6 +534,7 @@ main.index section.news .content .turnleft {
   background: #f7822e;
   border-radius: 0px 24px 24px 0px;
   line-height: 52px;
+  transition: all 0.5s ease;
 }
 main.index section.news .content .turnleft i {
   font-size: 16px;
@@ -480,6 +543,9 @@ main.index section.news .content .turnleft i {
   top: 50%;
   margin-top: -9px;
   color: #fff;
+}
+main.index section.news .content .turnleft:hover {
+  background-color: #8cad2d;
 }
 main.index section.news .content .turnright {
   position: absolute;
@@ -491,6 +557,7 @@ main.index section.news .content .turnright {
   background: #f7822e;
   border-radius: 24px 0px 0px 24px;
   line-height: 52px;
+  transition: all 0.5s ease;
 }
 main.index section.news .content .turnright i {
   font-size: 16px;
@@ -499,6 +566,9 @@ main.index section.news .content .turnright i {
   top: 50%;
   margin-top: -9px;
   color: #fff;
+}
+main.index section.news .content .turnright:hover {
+  background-color: #8cad2d;
 }
 
 footer {
@@ -557,6 +627,10 @@ footer .footer_box .footer_button a {
   font-size: 22px;
   line-height: 32px;
   color: #fff;
+  transition: all 0.5s ease;
+}
+footer .footer_box .footer_button a:hover {
+  background-color: #f0a739;
 }
 footer .footer_box .icon_phone {
   grid-column: 7/8;
@@ -822,6 +896,7 @@ body main.meal .meal_block .content .food_card {
 }
 body main.meal .meal_block .content .food_card a {
   display: block;
+  transition: all 0.5s ease;
 }
 body main.meal .meal_block .content .food_card a .card_item {
   background-color: #fff;
@@ -830,6 +905,7 @@ body main.meal .meal_block .content .food_card a .card_item {
   padding: 0 20px;
   padding-top: 40px;
   height: 320px;
+  transition: all 0.5s ease;
 }
 body main.meal .meal_block .content .food_card a .card_item .card_pic {
   margin-bottom: 32px;
@@ -849,6 +925,9 @@ body main.meal .meal_block .content .food_card a .card_item h3 span {
   font-size: 17px;
   line-height: 135%;
   color: #000;
+}
+body main.meal .meal_block .content .food_card a:hover .card_item {
+  box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.5);
 }
 body main.meal .meal_block .content .line {
   margin-bottom: 40px;
@@ -871,6 +950,12 @@ body main.meal .meal_block .content .menu_pic {
 }
 body main.meal .meal_block .content .menu_pic img {
   width: 100%;
+}
+body main.meal .meal_block .content .menu_pic a.circle_button {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 body main.meal .meal_block .content .menu_pic a.circle_button .circle_button_2 {
   width: 224px;
@@ -901,6 +986,12 @@ body main.meal .meal_block .content .menu_pic a.circle_button .circle_button_2 .
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+}
+body main.meal .meal_block .content .menu_pic .circle_button:hover .circle_button_2 {
+  padding: 16px;
+}
+body main.meal .meal_block .content .menu_pic .circle_button:hover .circle_button_3 {
+  padding: 8px;
 }
 
 body {
@@ -1021,6 +1112,10 @@ body main.meal_page a.back_button {
   color: #fff;
   font-weight: 700;
   font-size: 18px;
+  transition: all 0.5s ease;
+}
+body main.meal_page a.back_button:hover {
+  background-color: #8cad2d;
 }
 
 main.store .store_title {
@@ -1135,6 +1230,10 @@ main.store .store_table .search_list .search_button {
   color: #fff;
   font-weight: 500;
   font-size: 18px;
+  transition: all 0.5s ease;
+}
+main.store .store_table .search_list .search_button:hover {
+  background-color: #f6822e;
 }
 main.store .store_table .store_table_content {
   margin: 0 auto;
@@ -1176,6 +1275,10 @@ main.store .store_table .store_table_content tbody tr td {
 }
 main.store .store_table .store_table_content tbody tr td i {
   color: #000;
+  transition: all 0.5 ease;
+}
+main.store .store_table .store_table_content tbody tr td i:hover {
+  color: #f6822e;
 }
 main.store .store_table .page_button {
   text-align: center;
@@ -1259,6 +1362,11 @@ main.news .news_button a {
   padding: 7px 38px;
   color: #8cad2d;
   margin: 0 11px;
+  transition: all 0.3s ease;
+}
+main.news .news_button a:hover {
+  background-color: #8cad2d;
+  color: #fff;
 }
 main.news .news_button a#focus {
   background-color: #8cad2d;
@@ -1274,6 +1382,15 @@ main.news .news_card {
   text-align: center;
   padding-bottom: 40px;
 }
+main.news .news_card .card_item .pic {
+  overflow: hidden;
+  border-radius: 16px;
+}
+main.news .news_card .card_item .pic img {
+  width: 100%;
+  vertical-align: top;
+  transition: all 0.7s ease;
+}
 main.news .news_card .card_item h3 {
   font-weight: 500;
   font-size: 20px;
@@ -1285,6 +1402,12 @@ main.news .news_card .card_item span {
   font-weight: 400;
   font-size: 14px;
   color: #757575;
+}
+main.news .news_card .card_item:hover img {
+  transform: scale(1.2, 1.2);
+}
+main.news .news_card .card_item:hover h3 {
+  color: #8cad2d;
 }
 
 main.news_page {
@@ -1438,6 +1561,10 @@ main.news_page .manager_card .manager_card_txt a {
   text-align: center;
   border-radius: 4px;
   color: #000;
+  transition: all 0.5s ease;
+}
+main.news_page .manager_card .manager_card_txt a:hover {
+  background-color: #8cad2d;
 }
 main.news_page .card_line {
   margin-top: 32px;
@@ -1473,17 +1600,33 @@ main.news_page .news_page_card {
   text-align: center;
   padding-bottom: 40px;
 }
+main.news_page .news_page_card .card_item .pic {
+  overflow: hidden;
+  border-radius: 16px;
+}
+main.news_page .news_page_card .card_item .pic img {
+  width: 100%;
+  vertical-align: top;
+  transition: all 0.5s ease;
+}
 main.news_page .news_page_card .card_item h3 {
   font-weight: 500;
   font-size: 20px;
   color: #191919;
   margin-top: 20px;
   margin-bottom: 4px;
+  transition: all 0.5s ease;
 }
 main.news_page .news_page_card .card_item span {
   font-weight: 400;
   font-size: 14px;
   color: #757575;
+}
+main.news_page .news_page_card .card_item:hover img {
+  transform: scale(1.2, 1.2);
+}
+main.news_page .news_page_card .card_item:hover h3 {
+  color: #8cad2d;
 }
 
 main.assurance {
@@ -1512,6 +1655,11 @@ main.assurance .news_button a {
   padding: 7px 38px;
   color: #8cad2d;
   margin: 0 11px;
+  transition: all 0.5s ease;
+}
+main.assurance .news_button a:hover {
+  background-color: #8cad2d;
+  color: #fff;
 }
 main.assurance .news_button a#focus {
   background-color: #8cad2d;
@@ -1569,6 +1717,7 @@ main.assurance_page .assurance_page_content .left_picblock .smallpic_list {
 }
 main.assurance_page .assurance_page_content .left_picblock .smallpic_list img {
   border-radius: 2px;
+  vertical-align: top;
 }
 main.assurance_page .assurance_page_content .right_txtblock h3 {
   text-align: left;
@@ -1599,4 +1748,8 @@ main.assurance_page .back_button {
   font-weight: 700;
   font-size: 18px;
   color: #fff;
+  transition: all 0.5s ease;
+}
+main.assurance_page .back_button:hover {
+  background: #8cad2d;
 }/*# sourceMappingURL=style.css.map */
