@@ -87,9 +87,10 @@ header {
       }
 
       a:hover {
-        color: $minorcolor;
-        border-bottom: 2px solid $minorcolor;
-        border-top: 2px solid $minorcolor;
+        // color: $minorcolor;
+        // font-weight: 500;
+        border-bottom: 2px solid $maindarkcolor;
+        // border-top: 2px solid $minorcolor;
       }
     }
   }
@@ -359,7 +360,7 @@ main.index {
         }
 
         .star {
-          font-size: 4px;
+          font-size: 12px;
           margin-top: 8px;
           margin-bottom: 12px;
           color: #ffbc0d;
@@ -441,7 +442,7 @@ main.index {
         }
 
         .star {
-          font-size: 4px;
+          font-size: 12px;
           margin-top: 8px;
           margin-bottom: 12px;
           color: #ffbc0d;
@@ -568,8 +569,12 @@ main.index {
           .list_card {
             // flex-shrink: 0;
             .pic {
+              overflow: hidden;
+              border-radius: 16px;
               img {
                 width: 100%;
+                vertical-align: top;
+                transition: 0.5s;
               }
             }
 
@@ -582,6 +587,7 @@ main.index {
               margin-top: 22px;
               margin-bottom: 4px;
               padding: 0 6px;
+              transition: 0.5s;
             }
 
             span {
@@ -591,6 +597,14 @@ main.index {
               color: #757575;
             }
           }
+        }
+
+        a:hover img {
+          transform: scale(1.1, 1.1);
+        }
+
+        a:hover h3 {
+          color: $minorcolor;
         }
 
         a:nth-child(2) {
@@ -613,9 +627,16 @@ main.index {
           height: 8px;
           background: #757575;
           border-radius: 50%;
+          transition: 0.3s;
         }
 
         .focus {
+          width: 12px;
+          height: 12px;
+          background: #ffbc0d;
+        }
+
+        a:hover {
           width: 12px;
           height: 12px;
           background: #ffbc0d;
@@ -746,6 +767,7 @@ footer {
 
       a:hover {
         background-color: $maincloor;
+        color: #352f23;
       }
     }
 
@@ -760,10 +782,15 @@ footer {
         a {
           color: #9a9791;
           margin-right: 12px;
+          transition: 0.5s;
 
           i {
             font-size: 26px;
           }
+        }
+
+        a:hover {
+          color: $maincloor;
         }
       }
       .phone {
@@ -893,6 +920,7 @@ main.about {
 //meal
 body {
   overflow-x: hidden;
+
   main.meal {
     background-color: $bgcolor;
     overflow: hidden;
@@ -945,11 +973,18 @@ body {
       // overflow: hidden;
       .menu {
         width: 310px;
+        // NOTE 往下滑會停在視窗內
+        // position: sticky;
+        // top: 100px;
+
         .flort_menu {
           text-align: center;
+          position: sticky;
+          top: 0;
           filter: drop-shadow(2px 3px 10px rgba(0, 0, 0, 0.25));
           overflow: hidden;
           border-radius: 10px;
+
           .menu_title {
             background-color: #352f23;
             padding: 25px 0;
@@ -997,6 +1032,16 @@ body {
                   left: 50%;
                   transform: translate(-50%, -50%);
                 }
+
+                #sec_border {
+                  // display: none;
+                  opacity: 0;
+                  transition: all 0.5s ease;
+                }
+              }
+
+              a:hover #sec_border {
+                opacity: 1;
               }
               i {
                 color: #000;
@@ -1121,6 +1166,7 @@ body {
               transform: translate(-50%, -50%);
               border: 2px dashed #fff;
               border-radius: 50%;
+              transition: 0.5s;
 
               .circle_button_3 {
                 position: absolute;
@@ -1132,6 +1178,8 @@ body {
 
                 border: 2px solid #fff;
                 border-radius: 50%;
+                transition: 0.5s;
+
                 // line-height: 204px;
 
                 span {
@@ -1522,8 +1570,14 @@ main.store {
       }
 
       a#focus_a {
-        color: $maincloor;
+        color: $maindarkcolor;
         margin-right: 4px;
+        border-bottom: 1.5px solid $maindarkcolor;
+      }
+
+      a:hover {
+        color: $maindarkcolor;
+        border-bottom: 1.5px solid $maindarkcolor;
       }
     }
   }
@@ -1981,6 +2035,14 @@ main.assurance {
     text-align: center;
     padding-bottom: 40px;
     .card_item {
+      .pic {
+        overflow: hidden;
+        border-radius: 16px;
+        img {
+          vertical-align: top;
+          transition: 0.5s;
+        }
+      }
       h3 {
         font-weight: 500;
         font-size: 20px;
@@ -1988,6 +2050,14 @@ main.assurance {
         margin-top: 20px;
         margin-bottom: 4px;
       }
+    }
+
+    a:hover img {
+      transform: scale(1.2, 1.2);
+    }
+
+    a:hover h3 {
+      color: $minorcolor;
     }
   }
 }

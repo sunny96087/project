@@ -76,9 +76,7 @@ header nav .nav_list a {
   padding: 8px 0;
 }
 header nav .nav_list a:hover {
-  color: #8cad2d;
-  border-bottom: 2px solid #8cad2d;
-  border-top: 2px solid #8cad2d;
+  border-bottom: 2px solid #f6822e;
 }
 
 main.index {
@@ -306,7 +304,7 @@ main.index section.special .meal .txt span {
   color: #8cad2d;
 }
 main.index section.special .meal .txt .star {
-  font-size: 4px;
+  font-size: 12px;
   margin-top: 8px;
   margin-bottom: 12px;
   color: #ffbc0d;
@@ -378,7 +376,7 @@ main.index section.special .meal_pasta .txt span {
   color: #8cad2d;
 }
 main.index section.special .meal_pasta .txt .star {
-  font-size: 4px;
+  font-size: 12px;
   margin-top: 8px;
   margin-bottom: 12px;
   color: #ffbc0d;
@@ -481,8 +479,14 @@ main.index section.news .content .news_list {
 main.index section.news .content .news_list a {
   width: 100%;
 }
+main.index section.news .content .news_list a .list_card .pic {
+  overflow: hidden;
+  border-radius: 16px;
+}
 main.index section.news .content .news_list a .list_card .pic img {
   width: 100%;
+  vertical-align: top;
+  transition: 0.5s;
 }
 main.index section.news .content .news_list a .list_card h3 {
   font-weight: 400;
@@ -493,12 +497,19 @@ main.index section.news .content .news_list a .list_card h3 {
   margin-top: 22px;
   margin-bottom: 4px;
   padding: 0 6px;
+  transition: 0.5s;
 }
 main.index section.news .content .news_list a .list_card span {
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
   color: #757575;
+}
+main.index section.news .content .news_list a:hover img {
+  transform: scale(1.1, 1.1);
+}
+main.index section.news .content .news_list a:hover h3 {
+  color: #8cad2d;
 }
 main.index section.news .content .news_list a:nth-child(2) {
   transform: translateY(40px);
@@ -518,8 +529,14 @@ main.index section.news .content .page_dot a {
   height: 8px;
   background: #757575;
   border-radius: 50%;
+  transition: 0.3s;
 }
 main.index section.news .content .page_dot .focus {
+  width: 12px;
+  height: 12px;
+  background: #ffbc0d;
+}
+main.index section.news .content .page_dot a:hover {
   width: 12px;
   height: 12px;
   background: #ffbc0d;
@@ -631,6 +648,7 @@ footer .footer_box .footer_button a {
 }
 footer .footer_box .footer_button a:hover {
   background-color: #f0a739;
+  color: #352f23;
 }
 footer .footer_box .icon_phone {
   grid-column: 7/8;
@@ -644,9 +662,13 @@ footer .footer_box .icon_phone .icon {
 footer .footer_box .icon_phone .icon a {
   color: #9a9791;
   margin-right: 12px;
+  transition: 0.5s;
 }
 footer .footer_box .icon_phone .icon a i {
   font-size: 26px;
+}
+footer .footer_box .icon_phone .icon a:hover {
+  color: #f0a739;
 }
 footer .footer_box .icon_phone .phone {
   font-weight: 400;
@@ -809,6 +831,8 @@ body main.meal .meal_block .menu {
 }
 body main.meal .meal_block .menu .flort_menu {
   text-align: center;
+  position: sticky;
+  top: 0;
   filter: drop-shadow(2px 3px 10px rgba(0, 0, 0, 0.25));
   overflow: hidden;
   border-radius: 10px;
@@ -858,6 +882,13 @@ body main.meal .meal_block .menu .flort_menu .menu_content .menu_list .menu_list
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+body main.meal .meal_block .menu .flort_menu .menu_content .menu_list .menu_list_item #sec_border {
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+body main.meal .meal_block .menu .flort_menu .menu_content .menu_list a:hover #sec_border {
+  opacity: 1;
 }
 body main.meal .meal_block .menu .flort_menu .menu_content .menu_list i {
   color: #000;
@@ -966,6 +997,7 @@ body main.meal .meal_block .content .menu_pic a.circle_button .circle_button_2 {
   transform: translate(-50%, -50%);
   border: 2px dashed #fff;
   border-radius: 50%;
+  transition: 0.5s;
 }
 body main.meal .meal_block .content .menu_pic a.circle_button .circle_button_2 .circle_button_3 {
   position: absolute;
@@ -976,6 +1008,7 @@ body main.meal .meal_block .content .menu_pic a.circle_button .circle_button_2 .
   height: 204px;
   border: 2px solid #fff;
   border-radius: 50%;
+  transition: 0.5s;
 }
 body main.meal .meal_block .content .menu_pic a.circle_button .circle_button_2 .circle_button_3 span {
   color: #fff;
@@ -1292,8 +1325,13 @@ main.store .store_table .page_button a {
   color: #000;
 }
 main.store .store_table .page_button a#focus_a {
-  color: #f0a739;
+  color: #f6822e;
   margin-right: 4px;
+  border-bottom: 1.5px solid #f6822e;
+}
+main.store .store_table .page_button a:hover {
+  color: #f6822e;
+  border-bottom: 1.5px solid #f6822e;
 }
 
 main.news .store_title {
@@ -1675,12 +1713,26 @@ main.assurance .assurance_card {
   text-align: center;
   padding-bottom: 40px;
 }
+main.assurance .assurance_card .card_item .pic {
+  overflow: hidden;
+  border-radius: 16px;
+}
+main.assurance .assurance_card .card_item .pic img {
+  vertical-align: top;
+  transition: 0.5s;
+}
 main.assurance .assurance_card .card_item h3 {
   font-weight: 500;
   font-size: 20px;
   color: #191919;
   margin-top: 20px;
   margin-bottom: 4px;
+}
+main.assurance .assurance_card a:hover img {
+  transform: scale(1.2, 1.2);
+}
+main.assurance .assurance_card a:hover h3 {
+  color: #8cad2d;
 }
 
 main.assurance_page {
