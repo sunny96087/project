@@ -84,21 +84,37 @@ header {
         color: #000;
         transition: all 0.3s ease;
         padding: 8px 0;
+        position: relative;
       }
 
-      a:hover {
-        // color: $minorcolor;
-        // font-weight: 500;
-        border-bottom: 2px solid $maindarkcolor;
-        // border-top: 2px solid $minorcolor;
+      a::after {
+        content: " ";
+        display: block;
+        width: 0;
+        height: 1.5px;
+        background-color: #000;
+        transition: 0.4s 0.2s;
+        position: absolute;
+        bottom: 0;
+        right: 0;
       }
+      a:hover::after {
+        width: 100%;
+        left: 0;
+      }
+
+      // a:hover {
+      //   // border-bottom: 2px solid $maindarkcolor;
+      // }
     }
   }
 }
 
 main.index {
-  background-color: $bgcolor;
+  background-color: transparent;
   overflow: hidden;
+  position: relative;
+
   section.welcome {
     display: flex;
     position: relative;
@@ -241,21 +257,35 @@ main.index {
 
       a.circle_button {
         position: absolute;
-        left: 50%;
         top: 50%;
+        left: 50%;
         transform: translate(-50%, -50%);
-        transition: all 1s ease;
+        transition: scale 0.5s;
+        transition: 0.5s;
+
+        &:hover {
+          .circle_button_2 {
+            transform: scale(1.1);
+            padding: 16px;
+          }
+          .circle_button_3 {
+            transform: scale(1.05);
+          }
+        }
+
         .circle_button_2 {
           width: 224px;
           height: 224px;
-          position: absolute;
-          left: 50%;
-          top: 50%;
-          transform: translate(-50%, -50%);
-          transition: all 0.5s ease;
           border: 2px dashed #fff;
           border-radius: 50%;
+          transition: scale 0.5s;
+          transition: 0.5s;
 
+          &:hover {
+            .circle_button_3 span {
+              font-size: 28px;
+            }
+          }
           .circle_button_3 {
             position: absolute;
             left: 50%;
@@ -263,11 +293,10 @@ main.index {
             transform: translate(-50%, -50%);
             width: 204px;
             height: 204px;
-            transition: all 0.5s ease;
-
             border: 2px solid #fff;
             border-radius: 50%;
-            // line-height: 204px;
+            transition: scale 0.5s;
+            transition: 0.5s;
 
             span {
               color: #fff;
@@ -278,7 +307,7 @@ main.index {
               left: 50%;
               top: 50%;
               transform: translate(-50%, -50%);
-              transition: all 1s ease;
+              transition: 0.5s;
             }
           }
         }
@@ -488,23 +517,30 @@ main.index {
       margin: 0 auto;
       width: 224px;
       height: 224px;
+      transition: all 0.5s ease;
+
+      &:hover {
+        .circle_button_2 {
+          transform: scale(1.2);
+        }
+
+        .circle_button_3 {
+          transform: scale(1.1);
+        }
+      }
+
       .circle_button_2 {
         width: 224px;
         height: 224px;
-        // position: absolute;
-        // left: 50%;
-        // top: 50%;
-        // transform: translate(-50%, -50%);
         position: relative;
         margin: 0 auto;
         margin-top: 24px;
-
         border: 2px dashed $maindarkcolor;
         border-radius: 50%;
         transition: all 0.5s ease;
 
         .circle_button_3 {
-          position: absolute;
+          position: relative;
           left: 50%;
           top: 50%;
           transform: translate(-50%, -50%);
@@ -514,6 +550,7 @@ main.index {
           border: 2px solid $maindarkcolor;
           border-radius: 50%;
           background-color: $maindarkcolor;
+          transition: all 0.5s ease;
           // line-height: 204px;
 
           span {
@@ -567,10 +604,9 @@ main.index {
         a {
           width: 100%;
           .list_card {
-            // flex-shrink: 0;
             .pic {
               overflow: hidden;
-              border-radius: 16px;
+              border-radius: 20px;
               img {
                 width: 100%;
                 vertical-align: top;
@@ -597,19 +633,22 @@ main.index {
               color: #757575;
             }
           }
-        }
 
-        a:hover img {
-          transform: scale(1.1, 1.1);
-        }
+          &:hover {
+            img {
+              transform: scale(1.1, 1.1);
+            }
 
-        a:hover h3 {
-          color: $minorcolor;
+            h3 {
+              color: $minorcolor;
+            }
+          }
         }
 
         a:nth-child(2) {
           transform: translateY(40px);
         }
+
         a:nth-child(4) {
           transform: translateY(40px);
         }
@@ -655,18 +694,17 @@ main.index {
         line-height: 52px;
         transition: all 0.5s ease;
 
+        &:hover {
+          background-color: $minorcolor;
+        }
+
         i {
           font-size: 16px;
           position: absolute;
           right: 16px;
-          top: 50%;
-          margin-top: -9px;
+          line-height: 52px;
           color: #fff;
         }
-      }
-
-      .turnleft:hover {
-        background-color: $minorcolor;
       }
 
       .turnright {
@@ -681,19 +719,86 @@ main.index {
         line-height: 52px;
         transition: all 0.5s ease;
 
+        &:hover {
+          background-color: $minorcolor;
+        }
+
         i {
           font-size: 16px;
           position: absolute;
           left: 16px;
-          top: 50%;
-          margin-top: -9px;
+          line-height: 52px;
           color: #fff;
         }
       }
+    }
+  }
 
-      .turnright:hover {
-        background-color: $minorcolor;
-      }
+  section.picgroup {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 1200px;
+    z-index: -5;
+    height: 100%;
+    // background-color: #ccc;
+    // border: 1px solid #000;
+
+    #cheese1 {
+      position: absolute;
+      left: -196px;
+      top: 855px;
+    }
+
+    #cheese2 {
+      position: absolute;
+      left: -103px;
+      top: 955px;
+    }
+
+    #cheese3 {
+      position: absolute;
+      left: -321px;
+      top: 1096px;
+    }
+
+    #left1 {
+      position: absolute;
+      left: -205px;
+      top: 1502px;
+    }
+
+    #left2 {
+      position: absolute;
+      left: -343px;
+      top: 2308px;
+    }
+
+    #right1 {
+      position: absolute;
+      right: -350px;
+      top: 754px;
+    }
+
+    #right2 {
+      position: absolute;
+      right: -111px;
+      top: 1550px;
+    }
+
+    #right3 {
+      position: absolute;
+      right: -350px;
+      top: 1576px;
+    }
+
+    #right4 {
+      position: absolute;
+      right: -100px;
+      top: 2808px;
     }
   }
 }
@@ -763,11 +868,11 @@ footer {
         line-height: 32px;
         color: #fff;
         transition: all 0.5s ease;
-      }
 
-      a:hover {
-        background-color: $maincloor;
-        color: #352f23;
+        &:hover {
+          background-color: $maincloor;
+          color: #352f23;
+        }
       }
     }
 
@@ -784,13 +889,13 @@ footer {
           margin-right: 12px;
           transition: 0.5s;
 
+          &:hover {
+            color: $maincloor;
+          }
+
           i {
             font-size: 26px;
           }
-        }
-
-        a:hover {
-          color: $maincloor;
         }
       }
       .phone {
@@ -1149,38 +1254,51 @@ body {
 
           img {
             width: 100%;
+            display: inline-block;
           }
 
           a.circle_button {
             position: absolute;
-            left: 50%;
             top: 50%;
+            left: 50%;
             transform: translate(-50%, -50%);
+            transition: scale 0.5s;
+            transition: 0.5s;
+
+            &:hover {
+              .circle_button_2 {
+                transform: scale(1.2);
+                padding: 16px;
+              }
+              .circle_button_3 {
+                transform: scale(1.1);
+              }
+            }
 
             .circle_button_2 {
               width: 224px;
               height: 224px;
-              position: absolute;
-              left: 50%;
-              top: 50%;
-              transform: translate(-50%, -50%);
               border: 2px dashed #fff;
               border-radius: 50%;
+              transition: scale 0.5s;
               transition: 0.5s;
 
+              &:hover {
+                .circle_button_3 span {
+                  font-size: 28px;
+                }
+              }
               .circle_button_3 {
-                position: absolute;
+                position: relative;
                 left: 50%;
                 top: 50%;
                 transform: translate(-50%, -50%);
                 width: 204px;
                 height: 204px;
-
                 border: 2px solid #fff;
                 border-radius: 50%;
+                transition: scale 0.5s;
                 transition: 0.5s;
-
-                // line-height: 204px;
 
                 span {
                   color: #fff;
@@ -1191,19 +1309,10 @@ body {
                   left: 50%;
                   top: 50%;
                   transform: translate(-50%, -50%);
+                  transition: 0.5s;
                 }
               }
             }
-          }
-
-          .circle_button:hover .circle_button_2 {
-            // transform: scale(1.1, 1.1);
-            padding: 16px;
-          }
-
-          .circle_button:hover .circle_button_3 {
-            // transform: scale(1.1, 1.1);
-            padding: 8px;
           }
         }
       }
@@ -1682,7 +1791,7 @@ main.news {
     display: grid;
     grid-template-rows: repeat(2, 1fr);
     grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
+    gap: 40px 20px;
     text-align: center;
     padding-bottom: 40px;
     .card_item {
@@ -2031,7 +2140,7 @@ main.assurance {
     display: grid;
     grid-template-rows: repeat(4, 1fr);
     grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
+    gap: 40px 20px;
     text-align: center;
     padding-bottom: 40px;
     .card_item {
