@@ -87,16 +87,41 @@ header {
       flex-direction: column;
       justify-content: space-between;
       position: absolute;
-      height: 30px;
-      width: 32px;
+      height: 32px;
+      width: 35px;
       right: 24px;
       z-index: 6;
-      div {
+      // position: relative;
+
+      // BUG 漢堡飛走惹
+
+      .hb_ea {
         display: block;
-        // width: 24 px;
-        height: 4px;
+        width: 35px;
+        height: 5px;
         background-color: #000;
         border-radius: 4px;
+        box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.2);
+        position: absolute;
+        left: 0;
+        right: 0;
+      }
+
+      .hb_ea:nth-child(1) {
+        background-color: $maindarkcolor;
+        border-radius: 20px 20px 4px 4px;
+        top: 0;
+      }
+
+      .hb_ea:nth-child(2) {
+        background-color: $bgcolor;
+        top: 13.5px;
+      }
+
+      .hb_ea:nth-child(3) {
+        background-color: $minorcolor;
+        border-radius: 4px 4px 20px 20px;
+        top: 27px;
       }
     }
 
@@ -107,12 +132,14 @@ header {
       z-index: 5;
       width: 70%;
       position: absolute;
-      right: 0;
+      right: -100%;
       top: 0;
+      // bottom: 0;
       height: 100vh;
       padding: 40px 0;
       text-align: center;
-      display: none;
+      // display: none;
+      transition: right 0.5s;
 
       a {
         position: relative;
@@ -137,6 +164,10 @@ header {
       i {
         font-size: 12px;
       }
+    }
+
+    .nav_list_hb_toggle {
+      right: 0;
     }
 
     .hb_line {
@@ -253,6 +284,10 @@ header {
       }
 
       .hb {
+        display: none;
+      }
+
+      .nav_list_hb {
         display: none;
       }
     }
