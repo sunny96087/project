@@ -4,7 +4,7 @@
   font-family: "JF", Courier, monospace;
 }
 
-*a {
+a {
   text-decoration: none;
 }
 
@@ -36,7 +36,7 @@ body {
 }
 
 // NOTE header
-// BUG 漢堡選單顯示 / 隱藏 jQuery
+// NOTE 漢堡選單 jQuery_OK
 
 header {
   width: 100%;
@@ -93,8 +93,6 @@ header {
       z-index: 6;
       // position: relative;
 
-      // BUG 漢堡飛走惹
-
       .hb_ea {
         display: block;
         width: 35px;
@@ -102,26 +100,42 @@ header {
         background-color: #000;
         border-radius: 4px;
         box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.2);
-        position: absolute;
+        // position: absolute;
         left: 0;
         right: 0;
+        transition: transform 0.4s ease;
       }
 
       .hb_ea:nth-child(1) {
         background-color: $maindarkcolor;
         border-radius: 20px 20px 4px 4px;
-        top: 0;
+        // top: 0;
+      }
+
+      .rotate_45 {
+        // top: 13.5px;
+        transform: translate(0, 13px) rotate(45deg);
       }
 
       .hb_ea:nth-child(2) {
         background-color: $bgcolor;
-        top: 13.5px;
+
+        // top: 13.5px;
+      }
+
+      .rotate_none {
+        display: none;
       }
 
       .hb_ea:nth-child(3) {
         background-color: $minorcolor;
         border-radius: 4px 4px 20px 20px;
-        top: 27px;
+        // top: 27px;
+      }
+
+      .rotate_-45 {
+        // top: 13.5px;
+        transform: translate(0, -13px) rotate(-45deg);
       }
     }
 

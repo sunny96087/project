@@ -4,7 +4,7 @@
   font-family: "JF", Courier, monospace;
 }
 
-* a {
+a {
   text-decoration: none;
 }
 
@@ -83,23 +83,29 @@ header nav .hb .hb_ea {
   background-color: #000;
   border-radius: 4px;
   box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.2);
-  position: absolute;
   left: 0;
   right: 0;
+  transition: transform 0.4s ease;
 }
 header nav .hb .hb_ea:nth-child(1) {
   background-color: #f6822e;
   border-radius: 20px 20px 4px 4px;
-  top: 0;
+}
+header nav .hb .rotate_45 {
+  transform: translate(0, 13px) rotate(45deg);
 }
 header nav .hb .hb_ea:nth-child(2) {
   background-color: #f1ecd3;
-  top: 13.5px;
+}
+header nav .hb .rotate_none {
+  display: none;
 }
 header nav .hb .hb_ea:nth-child(3) {
   background-color: #8cad2d;
   border-radius: 4px 4px 20px 20px;
-  top: 27px;
+}
+header nav .hb .rotate_-45 {
+  transform: translate(0, -13px) rotate(-45deg);
 }
 header nav .nav_list_hb {
   display: flex;
