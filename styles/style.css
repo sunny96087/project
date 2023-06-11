@@ -163,8 +163,7 @@ header nav .hb_icon a {
 }
 header nav .hb_phone {
   background-color: #f0a739;
-  width: 200px;
-  height: 28px;
+  padding: 4px 16px;
   margin: 0 auto;
   line-height: 28px;
   border-radius: 50px;
