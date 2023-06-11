@@ -9,6 +9,8 @@
       src="https://kit.fontawesome.com/2a82b7cf33.js"
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="./js/main.js"></script>
     <title>餓魚漢堡_食品保證</title>
   </head>
 
@@ -28,6 +30,42 @@
           <a href="news.html">最新消息</a> ｜
           <a href="#">食品保證</a>
         </div>
+
+        <div class="hb">
+          <div class="hb_ea hb_top"></div>
+          <div class="hb_ea hb_mid"></div>
+          <div class="hb_ea hb_ad"></div>
+        </div>
+        <div class="nav_list_hb">
+          <a href="about.html"
+            >關於餓魚<br /><span class="hb_txt_sec">ABOUT</span></a
+          ><i class="fa fa-star" aria-hidden="true"></i>
+
+          <a href="meal.html"
+            >美味餐點<br /><span class="hb_txt_sec">MENU</span></a
+          ><i class="fa fa-star" aria-hidden="true"></i>
+
+          <a href="store.html"
+            >門市查詢<br /><span class="hb_txt_sec">STORE</span></a
+          ><i class="fa fa-star" aria-hidden="true"></i>
+
+          <a href="news.html"
+            >最新消息<br /><span class="hb_txt_sec">NEWS</span></a
+          ><i class="fa fa-star" aria-hidden="true"></i>
+
+          <a href="#"
+            >食品保證<br /><span class="hb_txt_sec">CERTIFICATE</span></a
+          >
+          <div class="hb_line">
+            <img src="./pic/home/hb_Line.svg" alt="line" />
+          </div>
+          <div class="hb_icon">
+            <a href="#"><img src="./pic/home/hb_icon_fb.svg" alt="fb" /></a>
+
+            <a href="#"><img src="./pic/home/hb_icon_line.svg" alt="line" /></a>
+          </div>
+          <div class="hb_phone">加盟專線 : 0800-922-222</div>
+        </div>
       </nav>
     </header>
 
@@ -42,14 +80,17 @@
         <a href="#">海鮮</a>
         <a href="#" id="focus">所有證書</a>
       </div>
+
       <select class="news_select">
-        <option value="1">所有證書</option>
-        <option value="1">豬肉</option>
-        <option value="1">牛肉</option>
-        <option value="1">雞肉</option>
-        <option value="1">海鮮</option>
+        <option value="all">所有證書</option>
+        <option value="pork">豬肉</option>
+        <option value="beef">牛肉</option>
+        <option value="chicken">雞肉</option>
+        <option value="seafood">海鮮</option>
       </select>
-      <div class="assurance_card">
+
+      <!-- all -->
+      <div class="assurance_card card_none" id="all">
         <a href="assurance_page.html">
           <div class="card_item">
             <div class="pic">
@@ -176,6 +217,132 @@
               <img src="./pic/Assurance/food_16.png" alt="food" />
             </div>
             <h3>雞排番茄蔬菜堡</h3>
+          </div></a
+        >
+      </div>
+
+      <!-- pork -->
+      <div class="assurance_card card_none" id="pork">
+        <a href="assurance_page.html"
+          ><div class="card_item">
+            <div class="pic">
+              <img src="./pic/Assurance/food_3.png" alt="food" />
+            </div>
+            <h3>豬排堡</h3>
+          </div></a
+        >
+
+        <a href="assurance_page.html">
+          <div class="card_item">
+            <div class="pic">
+              <img src="./pic/Assurance/food_9.png" alt="food" />
+            </div>
+            <h3>培根牽絲堡</h3>
+          </div></a
+        >
+
+        <a href="assurance_page.html"
+          ><div class="card_item">
+            <div class="pic">
+              <img src="./pic/Assurance/food_11.png" alt="food" />
+            </div>
+            <h3>沙拉豬排堡</h3>
+          </div></a
+        >
+      </div>
+
+      <!-- beef -->
+      <div class="assurance_card card_none" id="beef">
+        <a href="assurance_page.html"
+          ><div class="card_item">
+            <div class="pic">
+              <img src="./pic/Assurance/food_7.png" alt="food" />
+            </div>
+            <h3>菇菇牛堡</h3>
+          </div></a
+        >
+      </div>
+
+      <!-- chicken -->
+      <div class="assurance_card card_none" id="chicken">
+        <a href="assurance_page.html">
+          <div class="card_item">
+            <div class="pic">
+              <img src="./pic/Assurance/food_2.png" alt="food" />
+            </div>
+            <h3>洗選蛋</h3>
+          </div></a
+        >
+        <a href="assurance_page.html"
+          ><div class="card_item">
+            <div class="pic">
+              <img src="./pic/Assurance/food_1.png" alt="food" />
+            </div>
+            <h3>雞柳條</h3>
+          </div></a
+        >
+
+        <a href="assurance_page.html"
+          ><div class="card_item">
+            <div class="pic">
+              <img src="./pic/Assurance/food_5.png" alt="food" />
+            </div>
+            <h3>起司雞排堡</h3>
+          </div></a
+        >
+
+        <a href="assurance_page.html"
+          ><div class="card_item">
+            <div class="pic">
+              <img src="./pic/Assurance/food_8.png" alt="food" />
+            </div>
+            <h3>雞排吐司</h3>
+          </div></a
+        >
+
+        <a href="assurance_page.html"
+          ><div class="card_item">
+            <div class="pic">
+              <img src="./pic/Assurance/food_12.png" alt="food" />
+            </div>
+            <h3>沙拉雞排堡</h3>
+          </div></a
+        >
+        <a href="assurance_page.html"
+          ><div class="card_item">
+            <div class="pic">
+              <img src="./pic/Assurance/food_13.png" alt="food" />
+            </div>
+            <h3>雞排菜菜米堡</h3>
+          </div></a
+        >
+        <a href="assurance_page.html"
+          ><div class="card_item">
+            <div class="pic">
+              <img src="./pic/Assurance/food_14.png" alt="food" />
+            </div>
+            <h3>雞塊</h3>
+          </div></a
+        >
+
+        <a href="assurance_page.html"
+          ><div class="card_item">
+            <div class="pic">
+              <img src="./pic/Assurance/food_16.png" alt="food" />
+            </div>
+            <h3>雞排番茄蔬菜堡</h3>
+          </div></a
+        >
+      </div>
+
+      <!-- seafood -->
+      <div class="assurance_card card_none" id="seafood">
+        <a href="assurance_page.html"
+          ><div class="card_item">
+            <div class="pic">
+              <img src="./pic/Assurance/food_4.png" alt="food" />
+            </div>
+            <h3>天婦羅</h3>
           </div></a
         >
       </div>

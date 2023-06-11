@@ -9,6 +9,8 @@
       src="https://kit.fontawesome.com/2a82b7cf33.js"
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="./js/main.js"></script>
     <title>餓魚漢堡_最新消息</title>
   </head>
 
@@ -26,6 +28,41 @@
           <a href="meal.html">美味餐點</a> ｜
           <a href="store.html">門市查詢</a> ｜ <a href="#">最新消息</a> ｜
           <a href="assurance.html">食品保證</a>
+        </div>
+
+        <div class="hb">
+          <div class="hb_ea hb_top"></div>
+          <div class="hb_ea hb_mid"></div>
+          <div class="hb_ea hb_ad"></div>
+        </div>
+        <div class="nav_list_hb">
+          <a href="about.html"
+            >關於餓魚<br /><span class="hb_txt_sec">ABOUT</span></a
+          ><i class="fa fa-star" aria-hidden="true"></i>
+
+          <a href="meal.html"
+            >美味餐點<br /><span class="hb_txt_sec">MENU</span></a
+          ><i class="fa fa-star" aria-hidden="true"></i>
+
+          <a href="store.html"
+            >門市查詢<br /><span class="hb_txt_sec">STORE</span></a
+          ><i class="fa fa-star" aria-hidden="true"></i>
+
+          <a href="#">最新消息<br /><span class="hb_txt_sec">NEWS</span></a
+          ><i class="fa fa-star" aria-hidden="true"></i>
+
+          <a href="assurance.html"
+            >食品保證<br /><span class="hb_txt_sec">CERTIFICATE</span></a
+          >
+          <div class="hb_line">
+            <img src="./pic/home/hb_Line.svg" alt="line" />
+          </div>
+          <div class="hb_icon">
+            <a href="#"><img src="./pic/home/hb_icon_fb.svg" alt="fb" /></a>
+
+            <a href="#"><img src="./pic/home/hb_icon_line.svg" alt="line" /></a>
+          </div>
+          <div class="hb_phone">加盟專線 : 0800-922-222</div>
         </div>
       </nav>
     </header>
@@ -55,13 +92,14 @@
       </div>
 
       <select class="news_select">
-        <option value="1">所有訊息</option>
-        <option value="1">新品上市</option>
-        <option value="1">加盟新訊</option>
-        <option value="1">聯名合作</option>
+        <option value="all">所有訊息</option>
+        <option value="new">新品上市</option>
+        <option value="join">加盟新訊</option>
+        <option value="cooperate">聯名合作</option>
       </select>
 
-      <div class="news_card">
+      <!-- all -->
+      <div class="news_card card_none" id="all">
         <a href="news_page.html">
           <div class="card_item">
             <div class="pic">
@@ -131,6 +169,94 @@
               <img src="./pic/news/news_item_8.png" alt="news" />
             </div>
             <h3>高雄新店開幕!</h3>
+            <span>29 Mar, 2023</span>
+          </div></a
+        >
+      </div>
+
+      <!-- new -->
+      <div class="news_card card_none" id="new">
+
+
+        <a href="news_page.html"
+          ><div class="card_item">
+            <div class="pic">
+              <img src="./pic/news/news_item_7.png" alt="news" />
+            </div>
+            <h3>新菜單登場，海陸堡!</h3>
+            <span>29 Mar, 2023</span>
+          </div></a
+        >
+        <a href="news_page.html"
+          ><div class="card_item">
+            <div class="pic">
+              <img src="./pic/news/news_item_8.png" alt="news" />
+            </div>
+            <h3>高雄新店開幕!</h3>
+            <span>29 Mar, 2023</span>
+          </div></a
+        >
+      </div>
+
+      <!-- join -->
+      <div class="news_card card_none" id="join">
+        <a href="news_page.html">
+          <div class="card_item">
+            <div class="pic">
+              <img src="./pic/news/news_item_1.png" alt="news" />
+            </div>
+            <h3>2023高雄加盟展｜創業首選給利又省力</h3>
+            <span>29 Mar, 2023</span>
+          </div></a
+        >
+
+        <a href="news_page.html"
+          ><div class="card_item">
+            <div class="pic">
+              <img src="./pic/news/news_item_4.png" alt="news" />
+            </div>
+            <h3>2023台南加盟展｜創業首選 給利又省力</h3>
+            <span>29 Mar, 2023</span>
+          </div></a
+        >
+        <a href="news_page.html"
+          ><div class="card_item">
+            <div class="pic">
+              <img src="./pic/news/news_item_5.png" alt="news" />
+            </div>
+            <h3>2023桃園加盟展｜創業首選 給利又省力</h3>
+            <span>29 Mar, 2023</span>
+          </div></a
+        >
+        <a href="news_page.html"
+          ><div class="card_item">
+            <div class="pic">
+              <img src="./pic/news/news_item_6.png" alt="news" />
+            </div>
+            <h3>2023新竹加盟展｜創業首選 給利又省力</h3>
+            <span>29 Mar, 2023</span>
+          </div></a
+        >
+      </div>
+
+      <!-- cooperate -->
+      <div class="news_card card_none" id="cooperate">
+        <a href="news_page.html"
+          ><div class="card_item">
+            <div class="pic">
+              <img src="./pic/news/news_item_2.png" alt="news" />
+            </div>
+            <h3>相約一起來做漢堡，一日體驗營</h3>
+            <span>29 Mar, 2023</span>
+          </div></a
+        >
+
+        <a href="news_page.html"
+          ><div class="card_item">
+            <div class="pic">
+              <img src="./pic/news/news_item_7.png" alt="news" />
+            </div>
+            <h3>新菜單登場，海陸堡!</h3>
             <span>29 Mar, 2023</span>
           </div></a
         >
