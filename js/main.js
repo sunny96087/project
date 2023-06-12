@@ -204,3 +204,41 @@ $(document).ready(function () {
 //     // No action needed for other widths
 //   }
 // }
+
+// news_page 讚+1+1功能
+$(document).ready(function () {
+  // 新增點擊監聽器
+  $(".goob_button").click(function () {
+    // 定義並找到顯示數字的元素
+    var countElement = $(this).find(".count");
+
+    // 將取得的數字轉換為整數，並將其存儲到 count 變數中
+    var count = parseInt(countElement.text());
+
+    // 將原數字加一
+    countElement.text(count + 1);
+
+    // 尋找該按鈕中的 img, 並執行以下動畫
+    var imgElement = $(this).find("img");
+
+    // 定義動畫效果
+    imgElement
+      .animate(
+        {
+          "margin-top": "-3px",
+          "margin-bottom": "3px",
+        },
+        200
+      )
+      // 將圖片的上邊緣向上移動 3px，下邊緣向下移動 3px，持續 200 毫秒
+
+      .animate(
+        {
+          "margin-top": "0px",
+          "margin-bottom": "0px",
+        },
+        200
+      );
+    // 將圖片恢復到原始位置，持續 200 毫秒
+  });
+});
