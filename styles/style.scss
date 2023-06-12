@@ -155,7 +155,7 @@ header {
       text-align: center;
       // display: none;
       transition: right 0.5s;
-      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0);
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 
       a {
         position: relative;
@@ -3002,6 +3002,7 @@ main.store {
         font-weight: 500;
         font-size: 18px;
         transition: all 0.5s ease;
+        cursor: pointer;
 
         &:hover {
           background-color: $maindarkcolor;
@@ -3478,14 +3479,14 @@ main.news {
         color: $minorcolor;
         margin: 0 11px;
         transition: all 0.3s ease;
+
+        &:hover {
+          background-color: $minorcolor;
+          color: #fff;
+        }
       }
 
-      a:hover {
-        background-color: $minorcolor;
-        color: #fff;
-      }
-
-      a#focus {
+      .focus {
         background-color: $minorcolor;
         color: #fff;
       }
@@ -3503,7 +3504,7 @@ main.news {
       width: 1200px;
       margin: 0 auto;
       display: grid;
-      grid-template-rows: repeat(2, 1fr);
+      grid-template-rows: repeat(1, 1fr);
       grid-template-columns: repeat(4, 1fr);
       gap: 40px 20px;
       text-align: center;
@@ -3983,7 +3984,7 @@ main.assurance {
     color: $minorcolor;
   }
 
-  .news_button {
+  .assurance_button {
     display: none;
   }
 
@@ -4091,7 +4092,7 @@ main.assurance {
     }
 
     //分類按鈕
-    .news_button {
+    .assurance_button {
       display: block;
       margin-top: 60px;
       margin-bottom: 40px;
@@ -4103,14 +4104,14 @@ main.assurance {
         color: $minorcolor;
         margin: 0 11px;
         transition: all 0.5s ease;
+
+        &:hover {
+          background-color: $minorcolor;
+          color: #fff;
+        }
       }
 
-      a:hover {
-        background-color: $minorcolor;
-        color: #fff;
-      }
-
-      a#focus {
+      .focus {
         background-color: $minorcolor;
         color: #fff;
       }
@@ -4131,7 +4132,7 @@ main.assurance {
       width: 100%;
       // margin: 0 auto;
       display: grid;
-      grid-template-rows: repeat(4, 1fr);
+      grid-template-rows: repeat(1, 1fr);
       grid-template-columns: repeat(4, 1fr);
       // padding: 0 40px;
       // gap: 40px 20px;

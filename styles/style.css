@@ -121,7 +121,7 @@ header nav .nav_list_hb {
   padding: 40px 0;
   text-align: center;
   transition: right 0.5s;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 header nav .nav_list_hb a {
   position: relative;
@@ -2241,6 +2241,7 @@ main.store .store_table .search_list .search_button {
   font-weight: 500;
   font-size: 18px;
   transition: all 0.5s ease;
+  cursor: pointer;
 }
 main.store .store_table .search_list .search_button:hover {
   background-color: #f6822e;
@@ -2597,7 +2598,7 @@ main.news .news_card .card_item:hover h3 {
     background-color: #8cad2d;
     color: #fff;
   }
-  main.news .news_button a#focus {
+  main.news .news_button .focus {
     background-color: #8cad2d;
     color: #fff;
   }
@@ -2610,7 +2611,7 @@ main.news .news_card .card_item:hover h3 {
     width: 1200px;
     margin: 0 auto;
     display: grid;
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
     grid-template-columns: repeat(4, 1fr);
     gap: 40px 20px;
     text-align: center;
@@ -2991,7 +2992,7 @@ main.assurance h2 {
   font-size: 18px;
   color: #8cad2d;
 }
-main.assurance .news_button {
+main.assurance .assurance_button {
   display: none;
 }
 main.assurance .news_select {
@@ -3056,13 +3057,13 @@ main.assurance .assurance_card a:hover h3 {
   main.assurance h2 {
     font-size: 23px;
   }
-  main.assurance .news_button {
+  main.assurance .assurance_button {
     display: block;
     margin-top: 60px;
     margin-bottom: 40px;
     text-align: center;
   }
-  main.assurance .news_button a {
+  main.assurance .assurance_button a {
     border: 1px solid #8cad2d;
     border-radius: 50px;
     padding: 7px 38px;
@@ -3070,11 +3071,11 @@ main.assurance .assurance_card a:hover h3 {
     margin: 0 11px;
     transition: all 0.5s ease;
   }
-  main.assurance .news_button a:hover {
+  main.assurance .assurance_button a:hover {
     background-color: #8cad2d;
     color: #fff;
   }
-  main.assurance .news_button a#focus {
+  main.assurance .assurance_button .focus {
     background-color: #8cad2d;
     color: #fff;
   }
@@ -3087,7 +3088,7 @@ main.assurance .assurance_card a:hover h3 {
     max-width: 1200px;
     width: 100%;
     display: grid;
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 1fr);
     grid-template-columns: repeat(4, 1fr);
     padding-bottom: 40px;
   }
