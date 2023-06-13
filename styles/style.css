@@ -2214,6 +2214,7 @@ main.store .store_table .search_list select {
           appearance: none;
   background: url("/pic/store/icon_arrow.svg") no-repeat right center transparent;
   background-color: #fff;
+  color: #333;
 }
 main.store .store_table .search_list select option {
   font-size: 16px;
