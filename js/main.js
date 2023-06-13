@@ -1,36 +1,66 @@
 // header_hb 漢堡選單_顯示隱藏_旋轉動畫
 
+// $(document).ready(function () {
+//   $(".hb").click(function () {
+//     // 漢堡選單_顯示隱藏
+//     $(".nav_list_hb").toggleClass("nav_list_hb_toggle");
+
+//     // 漢堡選單_旋轉動畫
+//     $(".hb").children(".hb_ea:eq(0)").toggleClass("rotate_45");
+
+//     $(".hb").children(".hb_ea:eq(1)").toggleClass("rotate_none");
+
+//     $(".hb").children(".hb_ea:eq(2)").toggleClass("rotate_-45");
+//   });
+
 $(document).ready(function () {
   $(".hb").click(function () {
     // 漢堡選單_顯示隱藏
-    $(".nav_list_hb").toggleClass("nav_list_hb_toggle");
+    var $navList = $(".nav_list_hb");
+    var $hbEa1 = $(".hb").children(".hb_ea:eq(0)");
+    var $hbEa2 = $(".hb").children(".hb_ea:eq(1)");
+    var $hbEa3 = $(".hb").children(".hb_ea:eq(2)");
 
-    // 漢堡選單_旋轉動畫
-    $(".hb").children(".hb_ea:eq(0)").toggleClass("rotate_45");
-
-    $(".hb").children(".hb_ea:eq(1)").toggleClass("rotate_none");
-
-    $(".hb").children(".hb_ea:eq(2)").toggleClass("rotate_-45");
-  });
-
-  // 點擊頁面空白處
-  $(document).click(function (event) {
-    // 檢查漢堡選單是否展開
-    if ($(".nav_list_hb").hasClass("nav_list_hb_toggle")) {
-      // 檢查點擊事件的目標是否為漢堡選單或其子元素
-      if (!$(event.target).closest(".hb, .nav_list_hb").length) {
-        // 關閉漢堡選單
-        $(".nav_list_hb").removeClass("nav_list_hb_toggle");
-
-        // 重置漢堡選單旋轉動畫
-        $(".hb").children(".hb_ea:eq(0)").removeClass("rotate_45");
-
-        $(".hb").children(".hb_ea:eq(1)").removeClass("rotate_none");
-
-        $(".hb").children(".hb_ea:eq(2)").removeClass("rotate_-45");
-      }
+    if (!$navList.hasClass("nav_list_hb_toggle")) {
+      // 如果選單是隱藏的，則先顯示再滑出
+      $navList.addClass("nav_list_hb_toggle");
+      $hbEa1.addClass("rotate_45");
+      $hbEa2.addClass("rotate_none");
+      $hbEa3.addClass("rotate_-45");
+    } else {
+      // 如果選單是顯示的，則直接滑出
+      $navList.removeClass("nav_list_hb_toggle");
+      $hbEa1.removeClass("rotate_45");
+      $hbEa2.removeClass("rotate_none");
+      $hbEa3.removeClass("rotate_-45");
     }
   });
+
+  // 監聽選單元素的過渡結束事件，移除顯示的 class
+  $(".nav_list_hb").on("transitionend", function (e) {
+    if (e.propertyName === "right" && !$(this).hasClass("nav_list_hb_toggle")) {
+      $(this).removeClass("nav_list_hb_toggle");
+    }
+  });
+});
+
+// 點擊頁面空白處
+$(document).click(function (event) {
+  // 檢查漢堡選單是否展開
+  if ($(".nav_list_hb").hasClass("nav_list_hb_toggle")) {
+    // 檢查點擊事件的目標是否為漢堡選單或其子元素
+    if (!$(event.target).closest(".hb, .nav_list_hb").length) {
+      // 關閉漢堡選單
+      $(".nav_list_hb").removeClass("nav_list_hb_toggle");
+
+      // 重置漢堡選單旋轉動畫
+      $(".hb").children(".hb_ea:eq(0)").removeClass("rotate_45");
+
+      $(".hb").children(".hb_ea:eq(1)").removeClass("rotate_none");
+
+      $(".hb").children(".hb_ea:eq(2)").removeClass("rotate_-45");
+    }
+  }
 });
 
 // news slesct 切換區塊內容

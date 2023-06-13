@@ -31,6 +31,7 @@ $bgcolor: #f1ecd3;
 // NOTE body 就 overflow 跟 bgcolor 而已
 
 body {
+  width: 100%;
   overflow-x: hidden;
   background-color: $bgcolor;
 }
@@ -49,7 +50,6 @@ header {
 
   nav {
     display: flex;
-    // max-width: 1200px;
     width: 100%;
     margin: 0 auto;
     align-items: center;
@@ -91,7 +91,6 @@ header {
       width: 35px;
       right: 24px;
       z-index: 6;
-      // position: relative;
       cursor: pointer;
 
       .hb_ea {
@@ -101,7 +100,6 @@ header {
         background-color: #000;
         border-radius: 4px;
         box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.2);
-        // position: absolute;
         left: 0;
         right: 0;
         transition: transform 0.4s ease;
@@ -110,18 +108,14 @@ header {
       .hb_ea:nth-child(1) {
         background-color: $maindarkcolor;
         border-radius: 20px 20px 4px 4px;
-        // top: 0;
       }
 
       .rotate_45 {
-        // top: 13.5px;
         transform: translate(0, 13px) rotate(45deg);
       }
 
       .hb_ea:nth-child(2) {
         background-color: $bgcolor;
-
-        // top: 13.5px;
       }
 
       .rotate_none {
@@ -131,11 +125,9 @@ header {
       .hb_ea:nth-child(3) {
         background-color: $minorcolor;
         border-radius: 4px 4px 20px 20px;
-        // top: 27px;
       }
 
       .rotate_-45 {
-        // top: 13.5px;
         transform: translate(0, -13px) rotate(-45deg);
       }
     }
@@ -146,15 +138,13 @@ header {
       background-color: $bgcolor;
       z-index: 5;
       width: 70%;
-      position: absolute;
+      position: fixed;
       right: -100%;
       top: 0;
-      // bottom: 0;
       height: 100vh;
       padding: 40px 0;
       text-align: center;
-      // display: none;
-      transition: right 0.5s;
+      transition: right 0.5s linear;
       box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 
       a {
@@ -205,8 +195,6 @@ header {
 
     .hb_phone {
       background-color: $maincloor;
-      // width: 200px;
-      // height: 28px;
       padding: 4px 16px;
       margin: 0 auto;
       line-height: 28px;
@@ -220,43 +208,23 @@ header {
 
 @media screen and (min-width: 1024px) {
   header {
-    // width: 100%;
     height: 88px;
-    // background-color: $maincloor;
-    // box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.3);
-    // position: sticky;
-    // top: 0;
-    // z-index: 10;
 
     nav {
       display: flex;
       max-width: 1200px;
       width: 100%;
-      // margin: 0 auto;
-      // align-items: center;
       height: 88px;
-      // position: relative;
 
       .logo {
         width: 138px;
         height: 138px;
-        // position: absolute;
-        // top: 0;
-        // left: 20px;
-
-        // img {
-        // vertical-align: top;
-        // width: 100%;
-        // }
       }
 
       span {
         font-size: 28px;
-        // font-weight: 500;
-        // position: absolute;
         top: 30px;
         left: 166px;
-        // color: #000;
       }
 
       // NOTE 要做成漢堡選單
@@ -319,19 +287,11 @@ footer {
   text-align: center;
 
   .footer_box {
-    // display: grid;
-    // grid-template-rows: 120px 58px 532px 100px 180px 20px 230px;
-    // align-items: center;
-
     margin: 0 auto;
     width: 100%;
-    // max-width: 1200px;
-    // height: 174px;
     padding-top: 20px;
 
     .pic_logo {
-      // grid-column: 1/2;
-
       img {
         width: 88px;
         height: 88px;
@@ -366,7 +326,6 @@ footer {
     }
 
     .footer_button {
-      // grid-column: 5/6;
       display: flex;
       justify-content: center;
       gap: 0 20px;
@@ -394,10 +353,6 @@ footer {
     }
 
     .icon_phone {
-      // grid-column: 7/8;
-      // display: flex;
-      // flex-direction: column;
-      // justify-content: end;
       text-align: center;
       padding-bottom: 20px;
 
@@ -408,7 +363,6 @@ footer {
         gap: 18px;
         a {
           color: #9a9791;
-          // margin-right: 12px;
           transition: 0.5s;
 
           &:hover {
@@ -504,14 +458,12 @@ footer {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        // justify-items: end;
-        // justify-content: end;
         position: relative;
 
         .icon {
           justify-content: left;
-          // margin-bottom: 40px;
         }
+
         .phone {
           position: relative;
           top: 15px;
@@ -526,7 +478,6 @@ footer {
 // NOTE 最新消息換頁功能
 
 main.index {
-  // background-color: transparent;
   overflow: hidden;
   position: relative;
   width: 100%;
@@ -535,19 +486,14 @@ main.index {
     display: flex;
     position: relative;
     width: 100%;
-    // height: 700px;
     overflow: hidden;
 
     .right_pic {
-      // position: absolute;
       width: 100%;
-      // right: 0px;
-      // top: 0px;
-      // z-index: 1;
+
       img {
         width: 100%;
         height: auto;
-        // height: 700px;
       }
     }
 
@@ -556,7 +502,6 @@ main.index {
       width: 100%;
       height: 80px;
       right: 0px;
-      // top: 534px;
       bottom: 0;
       z-index: 5;
       background: linear-gradient(
@@ -659,7 +604,6 @@ main.index {
           .circle_button_2 {
             transform: scale(1.1);
             padding: 4px;
-            // animation: 1s rotate360 infinite linear;
           }
           .circle_button_3 {
             transform: scale(1.05);
@@ -709,7 +653,6 @@ main.index {
   }
 
   section.special {
-    // max-width: 1080px;
     width: 100%;
     margin: 0 auto;
     text-align: center;
@@ -732,7 +675,6 @@ main.index {
       display: flex;
       flex-direction: column;
       width: 100%;
-      // width: 1000px;
 
       .pic {
         width: 100%;
@@ -743,14 +685,12 @@ main.index {
         }
       }
 
-      // BUG
-
       .txt {
         width: 90%;
         text-align: left;
         margin: 0 auto;
         margin-top: 20px;
-        // margin-left: 40px;
+
         .tag {
           font-weight: 400;
           font-size: 16px;
@@ -840,7 +780,7 @@ main.index {
         text-align: left;
         margin: 0 auto;
         margin-top: 20px;
-        // margin-right: 20px;
+
         .tag {
           font-weight: 400;
           font-size: 16px;
@@ -1275,7 +1215,7 @@ main.index {
 
       .linear_box {
         height: 166px;
-        top: 534px;
+        top: 536px;
       }
 
       .sun_pic {
@@ -1414,6 +1354,12 @@ main.index {
       }
 
       .meal {
+        .pic {
+          img {
+            width: 70%;
+          }
+        }
+
         .txt {
           text-align: left;
 
@@ -1451,6 +1397,12 @@ main.index {
       }
 
       .meal_pasta {
+        .pic {
+          img {
+            width: 70%;
+          }
+        }
+
         .txt {
           text-align: left;
 
@@ -1859,7 +1811,7 @@ main.index {
 }
 
 // NOTE about
-// NOTE OK_ pic2 的腳尖尖的用不掉
+// NOTE OK_ pic2x
 
 main.about {
   background-color: $bgcolor;
@@ -1872,7 +1824,7 @@ main.about {
     margin: 0 auto;
     h1 {
       font-weight: 700;
-      font-size: 42px;
+      font-size: 36px;
       padding-top: 40px;
     }
 
@@ -1988,34 +1940,16 @@ main.about {
     padding: 0 40px;
 
     .title {
-      // text-align: center;
-      // max-width: 1200px;
-      // width: 100%;
-      // margin: 0 auto;
       h1 {
-        // font-weight: 700;
         font-size: 50px;
-        // padding-top: 40px;
       }
 
       h2 {
-        // font-weight: 700;
         font-size: 23px;
-        // color: $minorcolor;
-        // margin-top: 12px;
-        // margin-bottom: 56px;
       }
 
       .nb_1 {
-        // width: 168px;
-        // height: 40px;
-        // background: $minorcolor;
-        // border-radius: 50px;
-        // font-weight: 400;
         font-size: 18px;
-        // line-height: 40px;
-        // color: #fff;
-        // margin: 0 auto;
       }
       span {
         display: block;
@@ -2026,35 +1960,23 @@ main.about {
       }
       .line {
         max-width: 1200px;
-        // padding-bottom: 24px;
       }
     }
 
     .content {
       max-width: 1200px;
-      // width: 100%;
-      // margin: 0 auto;
-      // display: flex;
       flex-direction: row;
-      // padding-bottom: 40px;
       justify-content: space-between;
 
       .pic2 {
-        // max-width: 600px;
         width: 48%;
-        // margin-right: 20px;
-        // overflow: hidden;
 
         .pic2_pic1 {
-          // width: 100%;
           height: 334px;
-          // margin-bottom: 24px;
           overflow: hidden;
           border-radius: 2px;
 
           img {
-            // vertical-align: top;
-            // width: 100%;
             width: auto;
           }
         }
@@ -2063,43 +1985,28 @@ main.about {
           display: block;
           width: 100%;
           height: 592px;
-          border-radius: 2px;
           overflow: hidden;
 
           img {
             vertical-align: top;
             width: 100%;
+            border-radius: 2px;
           }
         }
       }
 
       .pic_txt {
-        // max-width: 600px;
         width: 48%;
         .txt {
           h3 {
-            // font-weight: 700;
-            // font-size: 26px;
             line-height: 38px;
-            // margin-top: 12px;
-            // color: #232323;
-            // margin-bottom: 16px;
             text-align: left;
           }
           span {
-            // font-weight: 400;
-            // font-size: 20px;
             line-height: 29px;
-            // color: #232323;
-            // display: block;
-            // margin: 16px 0;
             text-align: left;
           }
           p {
-            // font-weight: 400;
-            // font-size: 16px;
-            // line-height: 160%;
-            // color: #232323;
             padding-bottom: 24px;
           }
         }
@@ -2119,7 +2026,7 @@ main.about {
 
 // NOTE meal
 // NOTE 大致OK_重複code未清
-// NOTE 切換選單未做
+// NOTE 切換選單_OK
 
 main.meal {
   background-color: $bgcolor;
@@ -2131,15 +2038,7 @@ main.meal {
   }
 
   .meal_block {
-    // max-width: 1200px;
     width: 100%;
-    // display: flex;
-    // gap: 0 40px;
-    // padding: 0 20px;
-    // margin: 0 20px;
-    // box-sizing: border-box;
-    // margin: 0 auto;
-    // overflow: hidden;
 
     .menu {
       display: none;
@@ -2147,7 +2046,6 @@ main.meal {
 
     .content {
       text-align: center;
-      // width: 870px;
       width: 100%;
 
       .meal_select {
@@ -2185,21 +2083,16 @@ main.meal {
         margin: 0 auto;
         margin-top: 24px;
         margin-bottom: 40px;
-        // padding: 0 20px;
         width: 90%;
         overflow: hidden;
         img {
           width: 100%;
-          // height: 300px;
         }
       }
 
       .food_card {
         width: 95%;
         margin: 0 auto;
-
-        // display: grid;
-        // grid-template: repeat(2, 1fr) / repeat(2, 1fr);
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
@@ -2220,9 +2113,7 @@ main.meal {
             border-radius: 20px;
             padding: 0 20px;
             padding-top: 20px;
-            // padding-bottom: 10px;
             height: 295px;
-            // width: 100%;
             transition: all 0.5s ease;
 
             .card_pic {
@@ -2230,7 +2121,6 @@ main.meal {
               img {
                 width: 185px;
                 height: 166px;
-                // width: 100%;
               }
             }
             h3 {
@@ -2264,17 +2154,13 @@ main.meal {
       .menu_pic {
         box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.2);
         border-radius: 4px;
-        // overflow: hidden;
         width: 90%;
         margin: 0 auto;
-        // height: 638px;
-        // margin: 0 auto;
         margin-bottom: 40px;
         position: relative;
 
         img {
           width: 100%;
-          // display: inline-block;
         }
 
         a.circle_button {
@@ -2370,7 +2256,7 @@ main.meal {
           }
         }
 
-        // XXX 0605_1205要死掉了_與主要版重複未刪除
+        // XXX 0605_1205_與主要版重複未刪除
         .menu_pic {
           a.circle_button {
             position: absolute;
@@ -2785,7 +2671,6 @@ main.meal_page {
       margin: 0 auto;
       padding-top: 46px;
       margin-left: 24px;
-      // margin-bottom: 20px;
       display: flex;
       align-items: center;
       gap: 0 8px;
@@ -3255,7 +3140,7 @@ main.store {
 }
 
 // NOTE news
-// NOTE flex_item 無法靠左_吼ㄎ一ˋ啦
+// NOTE flex_item QQ
 
 main.news {
   text-align: center;
@@ -3265,13 +3150,8 @@ main.news {
     display: flex;
     flex-direction: column-reverse;
     width: 100%;
-    // display: block;
-    // margin: 0 auto;
 
     .title_left {
-      // width: 510px;
-      // margin: auto 0;
-      // padding-left: 20px;
       text-align: center;
       margin-top: 40px;
       display: block;
@@ -3298,11 +3178,9 @@ main.news {
     width: 100%;
     height: 300px;
     overflow: hidden;
-    // display: block;
 
     img {
       width: 100%;
-      // height: 560px;
       vertical-align: middle;
     }
   }
@@ -3312,7 +3190,6 @@ main.news {
   }
 
   .news_select {
-    // text-align: center;
     width: 258px;
     height: 32px;
     background-color: $minorcolor;
@@ -3322,8 +3199,6 @@ main.news {
     border-radius: 4px;
     border: $minorcolor;
     color: #fff;
-    // padding: 0 8px;
-    // box-sizing: border-box;
 
     option {
       font-size: 14px;
@@ -3334,13 +3209,9 @@ main.news {
   .news_card {
     width: 90%;
     margin: 0 auto;
-    // display: grid;
-    // grid-template-rows: repeat(2, 1fr);
-    // grid-template-columns: repeat(4, 1fr);
 
     display: flex;
     flex-wrap: wrap;
-    // align-items: flex-start;
     justify-content: center;
 
     gap: 40px 30px;
@@ -3348,10 +3219,7 @@ main.news {
     padding-bottom: 40px;
 
     a {
-      // width: 350px;
-      // max-width: 400px;
       .card_item {
-        // width: 100%;
         width: 290px;
         .pic {
           overflow: hidden;
@@ -3359,7 +3227,6 @@ main.news {
 
           img {
             width: 100%;
-            // width: 290px;
             vertical-align: top;
             transition: all 0.7s ease;
           }
@@ -3389,10 +3256,6 @@ main.news {
       color: $minorcolor;
     }
   }
-
-  // .card_none {
-  //   display: none;
-  // }
 }
 
 @media screen and (min-width: 768px) {
@@ -3411,9 +3274,7 @@ main.news {
         text-align: left;
 
         .page_tag {
-          // width: 1220px;
           margin: 0 auto;
-          // padding-top: 46px;
           margin-bottom: 16px;
           display: flex;
           align-items: center;
@@ -3444,15 +3305,11 @@ main.news {
         }
 
         h1 {
-          // font-weight: 700;
           font-size: 62px;
-          // color: #363636;
         }
 
         h2 {
-          // font-weight: 900;
           font-size: 27px;
-          // color: $minorcolor;
         }
       }
 
@@ -3553,7 +3410,6 @@ main.news {
 
 main.news_page {
   width: 90%;
-  // max-width: 1200px;
   margin: 0 auto;
   h1 {
     font-weight: 700;
@@ -3581,6 +3437,8 @@ main.news_page {
     margin-bottom: 8px;
     font-size: 12px;
     cursor: pointer;
+    color: #000;
+
     img {
       vertical-align: text-bottom;
     }
@@ -3693,15 +3551,11 @@ main.news_page {
     text-align: center;
     color: #232323;
     margin-top: 60px;
-    // margin-bottom: 80px;
   }
 
   .manager_card {
     margin-top: 40px;
-    // display: grid;
-    // grid-template-columns: 1fr 1fr;
 
-    // gap: 0 32px;
     .manager_card_pic {
       img {
         width: 100%;
@@ -3752,11 +3606,12 @@ main.news_page {
 
   .card_line {
     margin-top: -40px;
+    width: 100%;
+    overflow: hidden;
   }
 
   .share {
     margin-top: 16px;
-    // margin-left: 30px;
     display: flex;
     align-items: center;
     gap: 0 12px;
@@ -3782,19 +3637,19 @@ main.news_page {
   }
 
   .news_page_card {
-    // display: grid;
-    // grid-template-rows: repeat(1, 1fr);
-    // grid-template-columns: repeat(4, 1fr);
     display: flex;
     gap: 20px;
     text-align: center;
     padding-bottom: 40px;
     margin: auto;
     width: 100%;
+
     a {
       width: 100%;
+
       .card_item {
         width: 100%;
+
         .pic {
           overflow: hidden;
           border-radius: 16px;
@@ -3842,6 +3697,7 @@ main.news_page {
   main.news_page {
     max-width: 1200px;
     width: 100%;
+
     h1 {
       font-size: 50px;
       line-height: 72px;
@@ -3966,7 +3822,7 @@ main.news_page {
 }
 
 // NOTE assurance
-// NOTE flex_item 無法靠左_吼ㄎ一ˋ啦
+// NOTE flex_item QQ
 
 main.assurance {
   text-align: center;
@@ -3997,8 +3853,6 @@ main.assurance {
     border-radius: 4px;
     border: $minorcolor;
     color: #fff;
-    // padding: 0 8px;
-    // box-sizing: border-box;
 
     option {
       font-size: 14px;
@@ -4008,45 +3862,26 @@ main.assurance {
 
   .assurance_card {
     width: 100%;
-    // max-width: 768px;
     margin: 0 auto;
 
-    //---
-    // display: grid;
-    // grid-template-columns: repeat(
-    //   auto-fit,
-    //   minmax(300px, 1fr)
-    // ); /* 設定列的寬度 */
-    // grid-gap: 10px; /* 設定卡片之間的間距 */
-    // justify-items: flex-start; /* 靠左對齊 */
-    // justify-content: center;
-
-    //--
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
     justify-content: center;
-    // justify-items: flex-start;
-    // height: 100%;
-    //--
-    // display: grid;
-    // grid-template-rows: repeat(8, 1fr);
-    // grid-template-columns: repeat(2, 1fr);
     gap: 40px 30px;
     text-align: center;
     padding-bottom: 40px;
 
     a {
       .card_item {
-        // width: 280px;
         width: 100%;
+
         .pic {
           overflow: hidden;
           border-radius: 20px;
-          // border: 1px solid #000;
+
           img {
             vertical-align: top;
-            // height: 100%;
             transition: 0.5s;
             border-radius: 20px;
             overflow: hidden;
@@ -4069,14 +3904,6 @@ main.assurance {
         color: $minorcolor;
       }
     }
-
-    // a:hover img {
-    //   transform: scale(1.2, 1.2);
-    // }
-
-    // a:hover h3 {
-    //   color: $minorcolor;
-    // }
   }
 }
 
@@ -4130,40 +3957,16 @@ main.assurance {
     .assurance_card {
       max-width: 1200px;
       width: 100%;
-      // margin: 0 auto;
       display: grid;
       grid-template-rows: repeat(1, 1fr);
       grid-template-columns: repeat(4, 1fr);
-      // padding: 0 40px;
-      // gap: 40px 20px;
-      // text-align: center;
       padding-bottom: 40px;
 
       .card_item {
-        // .pic {
-        // overflow: hidden;
-        // border-radius: 16px;
-        // img {
-        // vertical-align: top;
-        // transition: 0.5s;
-        // }
-        // }
         h3 {
-          // font-weight: 500;
           font-size: 20px;
-          // color: #191919;
-          // margin-top: 20px;
-          // margin-bottom: 4px;
         }
       }
-
-      // a:hover img {
-      //    transform: scale(1.2, 1.2);
-      // }
-
-      // a:hover h3 {
-      //   color: $minorcolor;
-      // }
     }
   }
 }
@@ -4190,15 +3993,11 @@ main.assurance_page {
   }
 
   .assurance_page_content {
-    // max-width: 1220px;
     width: 80%;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    // grid-template: 1fr/ 1fr 1fr;
-    // gap: 0 40px;
     margin-bottom: 20px;
-    // padding: 0 20px;
     align-items: center;
 
     .left_picblock {
@@ -4234,10 +4033,8 @@ main.assurance_page {
       padding-top: 20px;
       h3 {
         text-align: left;
-        // margin-left: 30px;
         font-weight: 400;
         font-size: 20px;
-        // margin-bottom: 0;
       }
 
       .line {
@@ -4248,7 +4045,6 @@ main.assurance_page {
 
       .share {
         margin-top: 16px;
-        // margin-left: 30px;
         display: flex;
         align-items: center;
         gap: 0 12px;
@@ -4257,7 +4053,6 @@ main.assurance_page {
   }
 
   .long_line {
-    // text-align: center;
     margin: 0 auto;
     margin-top: 12px;
     width: 80%;
@@ -4271,7 +4066,6 @@ main.assurance_page {
     height: 52px;
     line-height: 52px;
     margin: 0 auto;
-    // padding: 13px 52px;
     margin-top: 36px;
     display: block;
     font-weight: 700;
@@ -4287,31 +4081,23 @@ main.assurance_page {
 
 @media screen and (min-width: 1024px) {
   main.assurance_page {
-    // text-align: center;
-    // padding-bottom: 40px;
     h1 {
-      // font-weight: 700;
       font-size: 50px;
       line-height: 72px;
-      // color: #272727;
       margin-top: 80px;
     }
 
     h2 {
-      // font-weight: 900;
       font-size: 23px;
-      // color: $minorcolor;
       margin-bottom: 64px;
     }
 
     .assurance_page_content {
       max-width: 1200px;
       width: 100%;
-      // margin: 0 auto;
       display: grid;
       grid-template: 1fr/ 1fr 1fr;
       gap: 0 40px;
-      // margin-bottom: 20px;
       align-items: flex-start;
 
       // .left_picblock {
@@ -4325,9 +4111,7 @@ main.assurance_page {
         overflow: hidden;
 
         h3 {
-          // text-align: left;
           margin-left: 30px;
-          // font-weight: 400;
           font-size: 22px;
           margin-bottom: 8px;
         }
@@ -4338,17 +4122,12 @@ main.assurance_page {
         }
 
         .share {
-          // margin-top: 16px;
           margin-left: 30px;
-          // display: flex;
-          // align-items: center;
-          // gap: 0 12px;
         }
       }
     }
 
     .long_line {
-      // margin-top: 12px;
       width: 92%;
     }
 
