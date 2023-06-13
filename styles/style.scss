@@ -299,10 +299,13 @@ footer {
     }
 
     .about_txt {
-      display: inline-block;
+      display: block;
       text-align: left;
+      padding: 0 40px;
 
       .txt_content {
+        display: block;
+
         font-weight: 400;
         font-size: 13px;
         line-height: 28px;
@@ -384,6 +387,17 @@ footer {
   }
 }
 
+@media screen and (min-width: 550px) {
+  footer {
+    .footer_box {
+      .about_txt {
+        display: inline-block;
+        // margin: auto;
+      }
+    }
+  }
+}
+
 @media screen and (min-width: 768px) {
   footer {
     .footer_box {
@@ -399,6 +413,9 @@ footer {
       }
 
       .about_txt {
+        // display: inline-block;
+        // margin: auto;
+
         .txt_content {
           font-weight: 500;
           font-size: 15px;
@@ -1933,6 +1950,10 @@ main.about {
           line-height: 160%;
           color: #232323;
           padding-bottom: 20px;
+
+          &::first-letter {
+            margin-left: 2rem;
+          }
         }
       }
       .pic_txt_pic {
@@ -2924,16 +2945,17 @@ main.store {
           width: 100%;
           th {
             background-color: $minorcolor;
-            width: 30%;
-            padding: 12px 24px;
+            // width: 30%;
+            padding: 12px 16px;
             color: #fff;
             font-weight: 600;
             font-size: 14px;
+            white-space: nowrap;
           }
           td {
-            width: 70%;
+            // width: 70%;
             font-weight: 400;
-            font-size: 16px;
+            font-size: 14px;
             padding-left: 12px;
             a {
               color: #272727;
@@ -3119,6 +3141,11 @@ main.store {
         tbody {
           tr {
             box-shadow: inset 0px -1px 0px rgba(175, 175, 175, 0.25);
+
+            th {
+              white-space: normal;
+            }
+
             td {
               font-weight: 400;
               font-size: 18px;
