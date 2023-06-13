@@ -1681,6 +1681,10 @@ main.index {
         width: 1000px;
         .pic {
           width: 560px;
+
+          img {
+            width: 100%;
+          }
         }
 
         .txt {
@@ -1699,6 +1703,10 @@ main.index {
         .pic {
           width: 560px;
           margin-top: auto;
+
+          img {
+            width: 100%;
+          }
         }
 
         .txt {
